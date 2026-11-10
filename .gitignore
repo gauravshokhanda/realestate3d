@@ -10,7 +10,7 @@ out/
 .sequence-test-*/
 public/sequences/.import-*/
 data/.scenes-import-*.tmp
-storage/
+/storage/
 data/*.db
 data/*.db-*
 prisma/data/
