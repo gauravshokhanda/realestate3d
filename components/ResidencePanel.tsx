@@ -9,12 +9,14 @@ type Props = { units: Unit[]; unit: Unit; visible: boolean; reducedMotion: boole
 
 export default function ResidencePanel({ units, unit, visible, reducedMotion, onSelect }: Props) {
   return (
-    <aside
-      style={{ opacity: visible ? 1 : 0, transform: `translateY(${visible || reducedMotion ? 0 : 20}px)`, transition: reducedMotion ? "none" : "opacity .8s cubic-bezier(.455,.03,.515,.955), transform .8s cubic-bezier(.455,.03,.515,.955)" }}
+    <motion.aside
+      initial={false}
+      animate={{ opacity: visible ? 1 : 0, y: visible || reducedMotion ? 0 : 20 }}
+      transition={{ duration: reducedMotion ? 0 : 0.8, ease: [0.455, 0.03, 0.515, 0.955] }}
       aria-hidden={!visible}
       inert={!visible}
       aria-label={`${unit.name} specifications`}
-      className={`residence-panel ${reducedMotion ? "relative mx-6 mb-12 sm:mx-12 lg:mx-20 lg:max-w-sm" : "absolute inset-x-4 bottom-6 md:inset-x-auto md:bottom-auto md:right-12 md:top-1/3 md:w-80 lg:right-20"} border border-champagne/60 bg-ink/75 p-6 backdrop-blur-xl sm:p-8`}
+      className={`${reducedMotion ? "relative mx-6 mb-12 sm:mx-12 lg:mx-20 lg:max-w-sm" : "absolute inset-x-4 bottom-6 md:inset-x-auto md:bottom-auto md:right-12 md:top-1/3 md:w-80 lg:right-20"} border border-champagne/60 bg-ink/75 p-6 backdrop-blur-xl sm:p-8`}
     >
       <UnitSelector units={units} selected={unit.id} onSelect={onSelect} />
       <AnimatePresence mode="wait" initial={false}>
@@ -32,6 +34,6 @@ export default function ResidencePanel({ units, unit, visible, reducedMotion, on
       <p className="mt-5 text-sm text-champagne"><CountValue value={unit.price} active={visible} reduced={reducedMotion} /></p>
       </motion.div>
       </AnimatePresence>
-    </aside>
+    </motion.aside>
   );
 }

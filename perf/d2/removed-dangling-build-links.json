@@ -1,0 +1,62 @@
+[
+    {
+        "FullName":  "D:\\3d\\.next-d2-control",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-d2-control"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-d-adaptive",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-adaptive"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-d-final",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-release"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-d-offscreen",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-d-offscreen-final",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-final"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-d-worker",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-phase-d-worker-build"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-e",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-e-production"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-e-dev",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-e-dev"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-e-final",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-e-final"
+                   ]
+    },
+    {
+        "FullName":  "D:\\3d\\.next-phase-f",
+        "Target":  [
+                       "C:\\Users\\PC\\AppData\\Local\\Temp\\aurelia-offscreen-build-root\\build-f"
+                   ]
+    }
+]

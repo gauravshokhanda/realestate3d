@@ -1,0 +1,8 @@
+{
+  "recordedAt": "2026-11-10T18:36:06.035Z",
+  "observation": "After the final build had settled and before live capture/functional tests",
+  "freePhysicalMemoryKiB": 1570396,
+  "cpuLoadPercent": 65,
+  "source": "Read-only Win32_OperatingSystem and Win32_Processor snapshots",
+  "freshTimingAcceptanceClaimed": false
+}

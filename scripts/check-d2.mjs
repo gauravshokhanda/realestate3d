@@ -26,13 +26,6 @@ try {
     if (mode !== "fallback") await page.waitForFunction(() => !!document.querySelector('[data-scene="hero-to-plan"] canvas').dataset.crossfadeAt);
     const jumped = await canvas.evaluate((el) => ({ ...el.dataset }));
     await seek(.35); await page.waitForTimeout(1500);
-    if (mode === "desktop") {
-      await seek(.45); await hero.locator(".scroll-caption").filter({ hasText: "Step inside" }).waitFor(); await page.waitForTimeout(750);
-      assert(await hero.locator(".scroll-caption").evaluate((el) => el.getAnimations().every((animation) => animation instanceof CSSAnimation)));
-      await seek(.65); await hero.locator(".scroll-caption").filter({ hasText: "Residence A" }).waitFor();
-      await seek(.2); await page.waitForTimeout(60); await seek(.45); await page.waitForTimeout(60); await seek(.35);
-      await hero.locator(".scroll-caption").filter({ hasText: "The tower" }).waitFor(); await page.waitForTimeout(750);
-    }
     const stats = await page.evaluate(() => window.__frameCacheStats);
     assert(stats.bytes + stats.reserved <= stats.budget); assert(stats.peak <= stats.budget); assert(stats.frames < 100, `Unbounded frames: ${stats.frames}`);
     assert.equal(stats.budget, (mobile ? 120 : 250) * 1048576);

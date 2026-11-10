@@ -45,6 +45,7 @@ try {
     await page.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor({ timeout: 90000 });
     await page.evaluate(() => document.fonts.ready); await page.waitForTimeout(1000);
     const reference = await page.evaluate(async () => { const values = []; let previous; await new Promise((resolve) => { const tick = (now) => { if (previous) values.push(now - previous); previous = now; if (values.length === 60) resolve(); else requestAnimationFrame(tick); }; requestAnimationFrame(tick); }); values.sort((a, b) => a - b); return { median: values[30], p95: values[57], visibility: document.visibilityState }; });
+    const systemBefore = { freeMemory: os.freemem(), collectorRSS: process.memoryUsage().rss };
     const complete = new Promise((resolve) => cdp.once("Tracing.tracingComplete", resolve));
     await cdp.send("Tracing.start", { categories: "toplevel,devtools.timeline,v8,blink.user_timing,disabled-by-default-devtools.timeline,disabled-by-default-devtools.timeline.frame", transferMode: "ReturnAsStream" });
     await cdp.send("Profiler.enable"); await cdp.send("Profiler.setSamplingInterval", { interval: 1000 }); await cdp.send("Profiler.start");
@@ -87,17 +88,19 @@ try {
     } else await cdp.send("Input.synthesizeScrollGesture", { x: 720, y: 450, yDistance: -Math.ceil(distance + 10), speed: 600, preventFling: true, gestureSourceType: "mouse" });
     await page.waitForFunction((end) => scrollY >= end - 4, distance, { timeout: 20000 }); await page.evaluate(() => window.__d2Finish());
     const measured = await measurement;
+    const systemAfter = { freeMemory: os.freemem(), collectorRSS: process.memoryUsage().rss };
     const { profile } = await cdp.send("Profiler.stop"); await cdp.send("Tracing.end"); const { stream } = await complete;
     const chunks = []; while (true) { const chunk = await cdp.send("IO.read", { handle: stream }); chunks.push(Buffer.from(chunk.data, chunk.base64Encoded ? "base64" : "utf8")); if (chunk.eof) break; } await cdp.send("IO.close", { handle: stream });
     await writeFile(path.join(output, `${name}-trace.json.gz`), await promisify(gzip)(Buffer.concat(chunks)));
     await writeFile(path.join(output, `${name}-cpu.json.gz`), await promisify(gzip)(Buffer.from(JSON.stringify(profile))));
-    const run = { iteration, device, cpuThrottle: mobile ? 4 : 1, reference, ...measured, errors, valid: measured.hidden === 0 && reference.visibility === "visible" && measured.readyScenes.length === 4 && errors.length === 0, trace: `${name}-trace.json.gz`, profile: `${name}-cpu.json.gz` };
+    const run = { iteration, device, cpuThrottle: mobile ? 4 : 1, reference, system: { before: systemBefore, after: systemAfter, memoryPressure: Math.min(systemBefore.freeMemory, systemAfter.freeMemory) < 512 * 1048576 }, ...measured, errors, valid: measured.hidden === 0 && reference.visibility === "visible" && measured.readyScenes.length === 4 && errors.length === 0, trace: `${name}-trace.json.gz`, profile: `${name}-cpu.json.gz` };
     report.runs.push(run); await writeFile(path.join(output, `${configuration}.json`), JSON.stringify(report, null, 2));
-    console.log(JSON.stringify({ configuration, iteration, device, p95: run.p95, longTasks: run.longTasks.length, cacheMB: run.cachePeaks.bytes / 1048576, ready: run.readyScenes.length, valid: run.valid })); await context.close();
+    console.log(JSON.stringify({ configuration, iteration, device, p95: run.p95, longTasks: run.longTasks.length, cacheMB: run.cachePeaks.bytes / 1048576, ready: run.readyScenes.length, valid: run.valid, freeMemoryMB: systemAfter.freeMemory / 1048576 })); await context.close();
   }
   report.summary = Object.fromEntries(["desktop", "mobile"].map((device) => {
     const runs = report.runs.filter((r) => r.device === device), p95 = runs.map((r) => r.p95).sort((a, b) => a - b), tasks = runs.map((r) => r.longTasks.length).sort((a, b) => a - b);
-    return [device, { runs: runs.length, validRuns: runs.filter((r) => r.valid).length, p95Median: p95[2], p95Worst: p95.at(-1), longTasksMedian: tasks[2], longTasksWorst: tasks.at(-1), passes: runs.length === 5 && runs.every((r) => r.valid) && p95[2] <= (device === "desktop" ? 20 : 33) && tasks[2] <= (device === "desktop" ? 0 : 1) }];
+    const valid = runs.length === 5 && runs.every((r) => r.valid && !r.system?.memoryPressure), frameLimit = device === "desktop" ? 20 : 33, taskLimit = device === "desktop" ? 0 : 1;
+    return [device, { runs: runs.length, validRuns: runs.filter((r) => r.valid).length, p95Median: p95[2], p95Worst: p95.at(-1), longTasksMedian: tasks[2], longTasksWorst: tasks.at(-1), passesMedianTargets: valid && p95[2] <= frameLimit && tasks[2] <= taskLimit, passes: valid && p95.at(-1) <= frameLimit && tasks.at(-1) <= taskLimit }];
   }));
   await writeFile(path.join(output, `${configuration}.json`), JSON.stringify(report, null, 2)); console.log(JSON.stringify(report.summary, null, 2));
 } finally { await browser.close(); }

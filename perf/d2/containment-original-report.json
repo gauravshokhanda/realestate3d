@@ -40456,5 +40456,6 @@
       "longTasksWorst": 2,
       "passes": false
     }
-  }
+  },
+  "archiveNote": "Original unnormalized artifact names; use containment.json for the preserved trace/profile file paths."
 }

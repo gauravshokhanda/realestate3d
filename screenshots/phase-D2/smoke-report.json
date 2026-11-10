@@ -9,19 +9,31 @@
     "pageErrors": [],
     "failedRequests": [
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0037.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/hero-to-plan-5450c6d5/frame_0075.webp?v=5450c6d5-f16a-4e88-a67f-11f48301d94c",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0052.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/hero-to-plan-5450c6d5/frame_0157.webp?v=5450c6d5-f16a-4e88-a67f-11f48301d94c",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0090.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0032.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0135.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0041.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0080.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0125.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0084.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
         "error": "net::ERR_ABORTED"
       },
       {
@@ -29,7 +41,43 @@
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0005.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0068.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0006.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/hero-to-plan-5450c6d5/frame_0143.webp?v=5450c6d5-f16a-4e88-a67f-11f48301d94c",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/hero-to-plan-5450c6d5/frame_0180.webp?v=5450c6d5-f16a-4e88-a67f-11f48301d94c",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0035.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0077.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0115.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f/frame_0078.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f/frame_0037.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0130.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
         "error": "net::ERR_ABORTED"
       },
       {
@@ -37,51 +85,31 @@
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0084.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0030.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0044.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0004.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0009.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0001.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0140.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/hero-to-plan-5450c6d5/frame_0180.webp?v=5450c6d5-f16a-4e88-a67f-11f48301d94c",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0027.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0001.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0068.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0158.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0156.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0135.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71/frame_0140.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d/frame_0152.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f/frame_0005.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f/frame_0125.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f/frame_0097.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
         "error": "net::ERR_ABORTED"
       }
     ],
@@ -159,7 +187,7 @@
         "mockedFormErrorAndSuccess": true
       }
     ],
-    "initialEncodedBytes": 444074
+    "initialEncodedBytes": 443847
   },
   {
     "viewport": {
@@ -175,15 +203,11 @@
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0003.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0019.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0015.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
-        "error": "net::ERR_ABORTED"
-      },
-      {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d-mobile/frame_0034.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0012.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
@@ -191,19 +215,43 @@
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d-mobile/frame_0010.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d-mobile/frame_0008.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0014.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0051.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0006.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0027.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       },
       {
-        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0039.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0056.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0085.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d-mobile/frame_0094.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f-mobile/frame_0053.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f-mobile/frame_0025.webp?v=72f2b52f-7f7c-4cbb-84da-bcb9e9970eff",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d-mobile/frame_0057.webp?v=6c6bf66d-2b81-4f22-9a1b-2ba00319ad20",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "http://localhost:4100/media/properties/aurelia/sequences-d2/plan-to-living-b3f30e71-mobile/frame_0045.webp?v=b3f30e71-a098-4b64-a70b-0356e9b7fe2a",
         "error": "net::ERR_ABORTED"
       }
     ],
@@ -276,7 +324,7 @@
         "mockedFormErrorAndSuccess": true
       }
     ],
-    "initialEncodedBytes": 470639
+    "initialEncodedBytes": 470412
   },
   {
     "viewport": {

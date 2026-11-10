@@ -1,0 +1,282 @@
+{
+  "at": "2026-11-10T18:17:46.695Z",
+  "compared": 55,
+  "matched": 47,
+  "results": [
+    {
+      "file": "chunks\\2159.b0102c168453e4ee.js",
+      "sha256": "93edd25989d0ef9f50b4f38bc277d10df16f78ef09fb52fe4b4846a776962526",
+      "match": true
+    },
+    {
+      "file": "chunks\\2656-66d23459ada39ed1.js",
+      "sha256": "5e52b9c722451eb4db5fdd232a8da6e1bdc25717bb5c76fcb887f21a1dc97641",
+      "match": true
+    },
+    {
+      "file": "chunks\\2695-eda02f0aeabad57f.js",
+      "sha256": "8629fc6e882c2f0abe141681106fd8c64cf2e0ebac608566a236aa412c949cfc",
+      "match": true
+    },
+    {
+      "file": "chunks\\2e814f82.2a10a8dec026c230.js",
+      "sha256": "0895ffd3f600177119e54e11e1f3ff2a409e88b5eb4d5e9ae0cf458810164203",
+      "match": false
+    },
+    {
+      "file": "chunks\\3658.e182a455ce45e3c5.js",
+      "sha256": "68d7a7a1fc2b2b13ac105ca49efb3cd067dc25643d22eb78cebca7b2164010e7",
+      "match": true
+    },
+    {
+      "file": "chunks\\4823-becc1d90bbd8e199.js",
+      "sha256": "ef5f554de7baa57fe21b0ebea25b4ea342a14433bdc8d159246ab0542032bc4c",
+      "match": true
+    },
+    {
+      "file": "chunks\\7437.f38cef9160d23e3b.js",
+      "sha256": "e133d8551f4bc1efe7a8b3425bc8d29fa47be28c982082debe111d921253ce83",
+      "match": true
+    },
+    {
+      "file": "chunks\\8528-5ad9df4dd4b1b68d.js",
+      "sha256": "119f69010239b7742330d83dd4aef7924f48ab8d22a230c46939f6fc4aea17ac",
+      "match": true
+    },
+    {
+      "file": "chunks\\8591-4a7f5a3621a6fcff.js",
+      "sha256": "307ba93574cd4b4181297564c798248b4b1153eb4ee713a797bceace92ad8cab",
+      "match": true
+    },
+    {
+      "file": "chunks\\9045.0fbffecb2c51ab0f.js",
+      "sha256": "b04ccc691e83bc72f4193896a0523882e293bb884d5675262b0b4a3e3ccc38ba",
+      "match": false
+    },
+    {
+      "file": "chunks\\9453.4111b816e86399a6.js",
+      "sha256": "92b2582195af34816d8d4cb38364ee2675d6d26546c9f26c63f3dd34cd884d0c",
+      "match": false
+    },
+    {
+      "file": "chunks\\a5e41b4f.1454967808067c5e.js",
+      "sha256": "4323126638e082bddca99c23e4991448f79f864b1a1f5fc6ad5d04d35fe8185c",
+      "match": false
+    },
+    {
+      "file": "chunks\\app\\admin\\(protected)\\layout-0d19f81aabceb1b3.js",
+      "sha256": "dcfd93e2c9adc603d5baff2bcd462a24d2d0cdb6674013d6f5f653ade1a2fad9",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\admin\\(protected)\\page-13e71c3e01f1e8f8.js",
+      "sha256": "95b07404976ba3370697b88686bd2ed04d212fbc6bea4ad8cc97f6f588753a54",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\admin\\(protected)\\properties\\new\\page-d212fef32c03e35b.js",
+      "sha256": "3af43952a891c17076570deae3f4a41799b6491ce72d0e35bf1352af0c101418",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\admin\\(protected)\\properties\\[id]\\page-746cdcc2c5976902.js",
+      "sha256": "91150d6365ed785eb6b24fb5d6303f40b3ef9f6dd04a7572626f2913bbca1f23",
+      "match": false
+    },
+    {
+      "file": "chunks\\app\\admin\\layout-2b79d4da628a825b.js",
+      "sha256": "e425d8175a4ccc3dbab6ced59322b69c1dd77de6c921b547e86480272a625027",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\admin\\login\\page-de365607c3013cfa.js",
+      "sha256": "7453b9968e1070594596e2b3a91ba63a17b7fade63ed2c66c4f545d240ee66a1",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\login\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\logout\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\[id]\\panoramas\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\[id]\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\[id]\\videos\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\[id]\\videos\\[sceneId]\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\properties\\[id]\\videos\\[sceneId]\\upload\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\slugs\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\storage\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\admin\\upload\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\api\\lead\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\layout-5b8b2cadf520272e.js",
+      "sha256": "e70e45b8eaa07b61e8ae99efed241b2124c0069a11d8a9cc79f4b2e2f2d56585",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\media\\[...path]\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\not-found-04f871c7a275abf7.js",
+      "sha256": "aed47cc86259a8dfc0073a23133b9669bd9fb008e0fb2307a5880392babe2ec3",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\opengraph-image\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\page-2459f66c6d0cc4ff.js",
+      "sha256": "212b6f0f54bf1aad41588317a82201a506d35e3a9f882c47d6f60ce492f7ef7b",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\sitemap.xml\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\template-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\[slug]\\og\\route-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\app\\[slug]\\page-3fee3f63b1ca2d97.js",
+      "sha256": "bd25e39a197abc0600c50a7e1dc5f3a35168fc9072825dcdc7bdfc8fc1c2874b",
+      "match": false
+    },
+    {
+      "file": "chunks\\app\\_not-found\\page-8518155e1f92ca76.js",
+      "sha256": "16b6edeb94f222ca559cf2b5429deb1c88867a90c8222092412cca93973d7ef2",
+      "match": true
+    },
+    {
+      "file": "chunks\\d5df7396-9a2208d0019e6e5d.js",
+      "sha256": "e437ec4b979851f0b73220a7f01504a37191544163ad6e7c1049ecc931a97dda",
+      "match": true
+    },
+    {
+      "file": "chunks\\f8007273.319d2f0f030dd1f7.js",
+      "sha256": "d34b43ae038e196eefbcb197c9c8635fed946607b76fc7e332d31876b5f0c756",
+      "match": false
+    },
+    {
+      "file": "chunks\\fd99ade1-b93accd6f14e05dd.js",
+      "sha256": "776cfb842a0395a51921a6b4635d1b46a4f8555be0e9cc172446d89b9764fa1f",
+      "match": true
+    },
+    {
+      "file": "chunks\\framework-0f1019cdd5fc487a.js",
+      "sha256": "e587d24418375858d71d4dcffcf4d3b042a875797ad3b9612fc778babe8672db",
+      "match": true
+    },
+    {
+      "file": "chunks\\main-app-20b3dd1de349c942.js",
+      "sha256": "b39076844f0d720ecd6777a74627a8570314677ca34216bdba81be16488c5c3c",
+      "match": true
+    },
+    {
+      "file": "chunks\\main-c115fa4bc66f0cef.js",
+      "sha256": "313b39de21017966e94b1b5c0502dd77526dfedd03f550fd3ce30e063e243c36",
+      "match": true
+    },
+    {
+      "file": "chunks\\pages\\_app-015b798e6247f690.js",
+      "sha256": "ddc970019647aae38bf206944ef7839acf703e9c995b9159e28d02dd0864c557",
+      "match": true
+    },
+    {
+      "file": "chunks\\pages\\_error-178faa69c2471fce.js",
+      "sha256": "fb9f488113497eac27726065a3370ed98322167775baf8286e282dc39966c6a5",
+      "match": true
+    },
+    {
+      "file": "chunks\\polyfills-42372ed130431b0a.js",
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+      "match": true
+    },
+    {
+      "file": "chunks\\webpack-19672b70bcced189.js",
+      "sha256": "1cc683042ba1ccdcfd05ab3a5e9f3f9add957f42b5d37950b63cdfdd3d86ad34",
+      "match": false
+    },
+    {
+      "file": "css\\098145272d2f0e4c.css",
+      "sha256": "c52a6e4afc12f12544068b13ed5fa664d236f277aa40696660ab3ee9f8b30d43",
+      "match": true
+    },
+    {
+      "file": "css\\47119767a72aa0d1.css",
+      "sha256": "28ffad48580767c3950910a05a1cc9506bdf0fd045f359d18cff0215c2e81901",
+      "match": true
+    },
+    {
+      "file": "css\\5d511ecac2ed908a.css",
+      "sha256": "fd639d8ca24cb6126a08e0674d0a3a7f38e08295a65c7938b095d43e7bd0abe1",
+      "match": true
+    },
+    {
+      "file": "css\\a1d8a197d036d3ab.css",
+      "sha256": "84c7e229f4371c5255faa8b9e992ec1d18cfd4a1efdc672d1faebe43e90cddbc",
+      "match": true
+    },
+    {
+      "file": "css\\c730fcb869401efa.css",
+      "sha256": "59a902433798439d2b59cb3e6705ab2b06ea70552620803457dc434099346ec0",
+      "match": true
+    }
+  ]
+}

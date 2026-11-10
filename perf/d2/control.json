@@ -29879,7 +29879,8 @@
       "p95Worst": 17.100000000000364,
       "longTasksMedian": 1,
       "longTasksWorst": 5,
-      "passes": false
+      "passes": false,
+      "passesMedianTargets": false
     },
     "mobile": {
       "runs": 5,
@@ -29888,7 +29889,9 @@
       "p95Worst": 33.30000000000291,
       "longTasksMedian": 0,
       "longTasksWorst": 0,
-      "passes": false
+      "passes": false,
+      "passesMedianTargets": false
     }
-  }
+  },
+  "acceptanceDefinition": "passesMedianTargets checks the median of all five runs; passes additionally requires every run to meet frame and long-task limits. Invalid runs are retained, never discarded."
 }

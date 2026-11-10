@@ -1,5 +1,5 @@
 {
-  "configuration": "candidate",
+  "configuration": "system-pressure",
   "url": "http://localhost:4100/aurelia",
   "date": "2026-11-10T17:42:09.679Z",
   "method": "Headed installed Chrome, hardware GPU verification; foreground tab, cold context per run; 600 CSS px/s continuous CDP mouse/touch input; five runs per desktop/native CPU and mobile/4x CPU; trace + 1ms CPU sampling enabled identically. No extraction/build/other benchmark runs concurrently.",
@@ -3911,8 +3911,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-desktop-1-trace.json.gz",
-      "profile": "candidate-desktop-1-cpu.json.gz"
+      "trace": "system-pressure-desktop-1-trace.json.gz",
+      "profile": "system-pressure-desktop-1-cpu.json.gz"
     },
     {
       "iteration": 1,
@@ -8039,8 +8039,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-mobile-1-trace.json.gz",
-      "profile": "candidate-mobile-1-cpu.json.gz"
+      "trace": "system-pressure-mobile-1-trace.json.gz",
+      "profile": "system-pressure-mobile-1-cpu.json.gz"
     },
     {
       "iteration": 2,
@@ -12003,8 +12003,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-desktop-2-trace.json.gz",
-      "profile": "candidate-desktop-2-cpu.json.gz"
+      "trace": "system-pressure-desktop-2-trace.json.gz",
+      "profile": "system-pressure-desktop-2-cpu.json.gz"
     },
     {
       "iteration": 2,
@@ -15465,8 +15465,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-mobile-2-trace.json.gz",
-      "profile": "candidate-mobile-2-cpu.json.gz"
+      "trace": "system-pressure-mobile-2-trace.json.gz",
+      "profile": "system-pressure-mobile-2-cpu.json.gz"
     },
     {
       "iteration": 3,
@@ -19503,8 +19503,8 @@
       "hidden": 0,
       "errors": [],
       "valid": false,
-      "trace": "candidate-desktop-3-trace.json.gz",
-      "profile": "candidate-desktop-3-cpu.json.gz"
+      "trace": "system-pressure-desktop-3-trace.json.gz",
+      "profile": "system-pressure-desktop-3-cpu.json.gz"
     },
     {
       "iteration": 3,
@@ -23158,8 +23158,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-mobile-3-trace.json.gz",
-      "profile": "candidate-mobile-3-cpu.json.gz"
+      "trace": "system-pressure-mobile-3-trace.json.gz",
+      "profile": "system-pressure-mobile-3-cpu.json.gz"
     },
     {
       "iteration": 4,
@@ -27088,8 +27088,8 @@
       "hidden": 0,
       "errors": [],
       "valid": false,
-      "trace": "candidate-desktop-4-trace.json.gz",
-      "profile": "candidate-desktop-4-cpu.json.gz"
+      "trace": "system-pressure-desktop-4-trace.json.gz",
+      "profile": "system-pressure-desktop-4-cpu.json.gz"
     },
     {
       "iteration": 4,
@@ -30852,8 +30852,8 @@
       "hidden": 0,
       "errors": [],
       "valid": true,
-      "trace": "candidate-mobile-4-trace.json.gz",
-      "profile": "candidate-mobile-4-cpu.json.gz"
+      "trace": "system-pressure-mobile-4-trace.json.gz",
+      "profile": "system-pressure-mobile-4-cpu.json.gz"
     }
   ],
   "browser": "156.0.8078.80",
@@ -31031,5 +31031,13 @@
     "--flag-switches-end",
     "--enable-unsafe-swiftshader"
   ],
-  "gpuVerified": true
+  "gpuVerified": true,
+  "interrupted": true,
+  "interruptionReason": "Capture stopped after Windows reported 456536 KiB free physical memory; not a completed five-run configuration. Background CPU was 69% after the benchmark browser closed.",
+  "systemObservations": {
+    "duringCaptureFreeKiB": 456536,
+    "totalPhysicalKiB": 12413908,
+    "afterBrowserCloseFreeKiB": 1856124,
+    "afterBrowserCloseCpuPercent": 69
+  }
 }

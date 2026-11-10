@@ -1,0 +1,26 @@
+{
+  "base": "http://localhost:3400",
+  "errors": [],
+  "storage": {
+    "available": true,
+    "free": 23632322560,
+    "total": 80444649472,
+    "properties": [
+      {
+        "id": "pano_demo_property",
+        "slug": "walkthrough-demo",
+        "name": "360° Test Walkthrough",
+        "bytes": 376910
+      },
+      {
+        "id": "aurelia",
+        "slug": "aurelia",
+        "name": "Aurelia residences",
+        "bytes": 145863786
+      }
+    ],
+    "measuredAt": "2026-11-10T18:23:12.843Z"
+  },
+  "fullPageUsesReducedMotion": true,
+  "recordingIsBenchmark": false
+}

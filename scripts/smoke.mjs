@@ -67,12 +67,24 @@ try {
         for (const [id, label] of [["living", "Living Room"], ["kitchen", "Kitchen"], ["primary-bedroom", "Primary Bedroom"]]) {
           await page.getByRole("button", { name: "Explore " + label, exact: true }).click();
           await page.locator(`#room-${id} [data-ready="true"]`).waitFor({ timeout: 60000 });
-          await page.waitForTimeout(1800); // Finish the hotspot's Lenis animation first.
+          // Wait for the real navigation to settle before issuing a second seek.
+          // A wall-clock sleep can expire while the renderer is descheduled.
+          await page.waitForFunction((roomId) => {
+            const top = document.getElementById(`room-${roomId}`).getBoundingClientRect().top;
+            const key = `arrival-${roomId}`, previous = window.__smokeArrival;
+            const stable = Math.abs(top) < 2 && previous?.key === key && Math.abs(previous.y - scrollY) < .25;
+            window.__smokeArrival = { key, y: scrollY, count: stable ? previous.count + 1 : 0 };
+            return window.__smokeArrival.count >= 6;
+          }, id, { timeout: 20000 });
           await page.evaluate((roomId) => {
             const scene = document.querySelector(`#room-${roomId} [data-scene]`);
             window.scrollTo({ top: scene.getBoundingClientRect().top + window.scrollY + Number(scene.dataset.scrollLength) * 0.5, behavior: "instant" });
           }, id);
-          await page.waitForTimeout(1300);
+          await page.waitForFunction((roomId) => {
+            const scene = document.querySelector(`#room-${roomId} [data-scene]`), canvas = scene.querySelector("canvas");
+            const progress = Number(scene.querySelector("section").dataset.progress), frame = Number(canvas.dataset.frame), target = Number(canvas.dataset.targetFrame);
+            return progress >= .45 && progress <= .55 && target > 1 && Math.abs(frame - target) <= 3;
+          }, id, { timeout: 15000 });
           const frame = await page.locator(`#room-${id} canvas`).getAttribute("data-frame");
           if (Number(frame) < 1) throw new Error("Room frames did not scrub: " + id);
           const filename = `${viewport.name}-room-${id}.png`;

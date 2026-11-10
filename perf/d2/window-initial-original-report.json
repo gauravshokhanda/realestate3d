@@ -40448,5 +40448,6 @@
       "longTasksWorst": 1,
       "passes": false
     }
-  }
+  },
+  "archiveNote": "Original unnormalized artifact names; use window-initial.json for the preserved trace/profile file paths."
 }
