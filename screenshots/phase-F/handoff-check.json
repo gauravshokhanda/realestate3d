@@ -1,0 +1,27 @@
+{
+  "properties": [
+    {
+      "slug": "aurelia",
+      "status": "published",
+      "_count": {
+        "rooms": 3,
+        "units": 2,
+        "scenes": 4
+      }
+    },
+    {
+      "slug": "walkthrough-demo",
+      "status": "published",
+      "_count": {
+        "rooms": 2,
+        "units": 1,
+        "scenes": 3
+      }
+    }
+  ],
+  "panoCount": 2,
+  "recording": {
+    "bytes": 18692336,
+    "tailDecodePassed": true
+  }
+}

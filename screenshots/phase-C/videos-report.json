@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "failure": null,
+  "checks": [
+    "Manual mode works without Gemini configuration; generation returns the configuration reason without a paid call",
+    "All four supplied MP4s decoded, auto-trimmed, delogo-filtered and extracted; three ready, mismatched kitchen correctly needs_review",
+    "Publication blocked while any endpoint needs review",
+    "Authenticated MP4 preview/download, byte ranges and invalid range handling",
+    "Manual trim persisted at 6.8s; quality warning retained for the wrong kitchen; bright sparkle pixels 664 → 0",
+    "14-second trim caps desktop at 240 frames; desktop/mobile never upscale a 320px source",
+    "Expired extraction lease recovers and rebuilds after simulated crash",
+    "Ambiguous interrupted generation fails safely instead of submitting a duplicate paid operation"
+  ],
+  "results": [
+    {
+      "key": "hero-to-plan",
+      "status": "ready",
+      "frameCount": 180,
+      "mobileFrameCount": 113,
+      "trimStart": 0,
+      "trimEnd": 7.5,
+      "similarity": 0.9839137391067538,
+      "warning": null
+    },
+    {
+      "key": "plan-to-bedroom",
+      "status": "ready",
+      "frameCount": 160,
+      "mobileFrameCount": 100,
+      "trimStart": 0,
+      "trimEnd": 6.666666666666667,
+      "similarity": 0.9833197167755992,
+      "warning": null
+    },
+    {
+      "key": "plan-to-kitchen",
+      "status": "needs_review",
+      "frameCount": 200,
+      "mobileFrameCount": 125,
+      "trimStart": 0,
+      "trimEnd": 8.333333333333334,
+      "similarity": 0.8654139433551198,
+      "warning": "The final frame differs from the target (87% grayscale similarity). Check the trim or regenerate before publishing."
+    },
+    {
+      "key": "plan-to-living",
+      "status": "ready",
+      "frameCount": 140,
+      "mobileFrameCount": 88,
+      "trimStart": 0,
+      "trimEnd": 5.833333333333333,
+      "similarity": 0.9686189406318083,
+      "warning": null
+    }
+  ],
+  "runtimeErrors": [],
+  "liveVeoTested": false
+}

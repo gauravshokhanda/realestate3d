@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.next-*
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+.vercel/
+.sequence-import.lock
+.sequence-test-*/
+public/sequences/.import-*/
+data/.scenes-import-*.tmp
+storage/
+data/*.db
+data/*.db-*
+prisma/data/
+prisma/.scenes-import-*.tmp

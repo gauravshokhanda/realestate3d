@@ -1,0 +1,90 @@
+[
+  {
+    "scene": "hero-to-plan",
+    "scrollLength": 3420,
+    "variants": [
+      {
+        "variant": "desktop",
+        "frames": 180,
+        "width": 1280,
+        "height": 720,
+        "bytes": 13219640,
+        "MB": 13.22
+      },
+      {
+        "variant": "mobile",
+        "frames": 113,
+        "width": 800,
+        "height": 450,
+        "bytes": 4045442,
+        "MB": 4.045
+      }
+    ]
+  },
+  {
+    "scene": "plan-to-living",
+    "scrollLength": 2660,
+    "variants": [
+      {
+        "variant": "desktop",
+        "frames": 140,
+        "width": 1280,
+        "height": 720,
+        "bytes": 10942376,
+        "MB": 10.942
+      },
+      {
+        "variant": "mobile",
+        "frames": 88,
+        "width": 800,
+        "height": 450,
+        "bytes": 3247944,
+        "MB": 3.248
+      }
+    ]
+  },
+  {
+    "scene": "plan-to-kitchen",
+    "scrollLength": 3120,
+    "variants": [
+      {
+        "variant": "desktop",
+        "frames": 164,
+        "width": 1280,
+        "height": 720,
+        "bytes": 10913312,
+        "MB": 10.913
+      },
+      {
+        "variant": "mobile",
+        "frames": 103,
+        "width": 800,
+        "height": 450,
+        "bytes": 3381280,
+        "MB": 3.381
+      }
+    ]
+  },
+  {
+    "scene": "plan-to-bedroom",
+    "scrollLength": 3020,
+    "variants": [
+      {
+        "variant": "desktop",
+        "frames": 159,
+        "width": 1280,
+        "height": 720,
+        "bytes": 10651022,
+        "MB": 10.651
+      },
+      {
+        "variant": "mobile",
+        "frames": 99,
+        "width": 800,
+        "height": 450,
+        "bytes": 3175796,
+        "MB": 3.176
+      }
+    ]
+  }
+]

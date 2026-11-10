@@ -1,0 +1,324 @@
+{
+  "label": "before",
+  "date": "2026-11-10T07:18:11.323Z",
+  "browser": "156.0.8078.80",
+  "scrollMode": "gesture",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz",
+    "logicalCpus": 4,
+    "memoryBytes": 12711841792,
+    "platform": "win32"
+  },
+  "url": "http://localhost:3300/aurelia",
+  "method": "Cold browser context; hero and fonts ready. CDP continuous mouse/touch gesture at 600 CSS px/s. Includes lazy decoding and scene setup. Dropped frames estimated against 60 Hz; long tasks from PerformanceObserver. Trace covers the same interval.",
+  "runs": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "cpuThrottle": 1,
+      "durationMs": 28769.79999999702,
+      "distance": 16847,
+      "scrollEndEvents": 0,
+      "frames": 1479,
+      "averageFrameMs": 19.43008789722789,
+      "p95FrameMs": 33.30000000000109,
+      "maxFrameMs": 516.2999999999993,
+      "droppedFrames": 246,
+      "longTasks": [
+        {
+          "start": 7662.0999999940395,
+          "duration": 64
+        },
+        {
+          "start": 7764.89999999851,
+          "duration": 76
+        },
+        {
+          "start": 7886.79999999702,
+          "duration": 61
+        },
+        {
+          "start": 7962.39999999851,
+          "duration": 64
+        },
+        {
+          "start": 8044.79999999702,
+          "duration": 62
+        },
+        {
+          "start": 8128.19999999553,
+          "duration": 57
+        },
+        {
+          "start": 8345.29999999702,
+          "duration": 55
+        },
+        {
+          "start": 8412.69999999553,
+          "duration": 55
+        },
+        {
+          "start": 8481.89999999851,
+          "duration": 55
+        },
+        {
+          "start": 8548,
+          "duration": 55
+        },
+        {
+          "start": 8612.29999999702,
+          "duration": 58
+        },
+        {
+          "start": 8678.89999999851,
+          "duration": 57
+        },
+        {
+          "start": 8748.59999999404,
+          "duration": 52
+        },
+        {
+          "start": 8820.79999999702,
+          "duration": 62
+        },
+        {
+          "start": 8899.59999999404,
+          "duration": 68
+        },
+        {
+          "start": 9047.09999999404,
+          "duration": 59
+        },
+        {
+          "start": 9124.19999999553,
+          "duration": 57
+        },
+        {
+          "start": 9198.79999999702,
+          "duration": 55
+        },
+        {
+          "start": 10044.19999999553,
+          "duration": 50
+        },
+        {
+          "start": 10111.59999999404,
+          "duration": 51
+        },
+        {
+          "start": 10178.69999999553,
+          "duration": 57
+        },
+        {
+          "start": 10246.5,
+          "duration": 61
+        },
+        {
+          "start": 10327.59999999404,
+          "duration": 57
+        },
+        {
+          "start": 10400.89999999851,
+          "duration": 59
+        },
+        {
+          "start": 11176.69999999553,
+          "duration": 71
+        },
+        {
+          "start": 11745,
+          "duration": 50
+        },
+        {
+          "start": 11800.29999999702,
+          "duration": 56
+        },
+        {
+          "start": 12351.69999999553,
+          "duration": 50
+        },
+        {
+          "start": 12811,
+          "duration": 52
+        },
+        {
+          "start": 12878.39999999851,
+          "duration": 51
+        },
+        {
+          "start": 12945.19999999553,
+          "duration": 56
+        },
+        {
+          "start": 13010.29999999702,
+          "duration": 50
+        },
+        {
+          "start": 13076.69999999553,
+          "duration": 55
+        },
+        {
+          "start": 13144.79999999702,
+          "duration": 54
+        },
+        {
+          "start": 13209.89999999851,
+          "duration": 53
+        },
+        {
+          "start": 13280.89999999851,
+          "duration": 55
+        },
+        {
+          "start": 13344.79999999702,
+          "duration": 58
+        },
+        {
+          "start": 13413.5,
+          "duration": 53
+        },
+        {
+          "start": 13483.79999999702,
+          "duration": 50
+        },
+        {
+          "start": 13592.89999999851,
+          "duration": 55
+        },
+        {
+          "start": 18306.5,
+          "duration": 52
+        },
+        {
+          "start": 18969.09999999404,
+          "duration": 72
+        },
+        {
+          "start": 27043.09999999404,
+          "duration": 76
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 642,
+        "bitmapDecodes": 0,
+        "liveBitmaps": 0,
+        "peakBitmaps": 0,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 0
+      },
+      "readyScenes": [
+        "plan-to-kitchen"
+      ],
+      "heap": {
+        "startBytes": 7757944,
+        "endBytes": 6537748,
+        "peakBytes": 11165512
+      },
+      "trace": "before-desktop-trace.json.gz",
+      "passes": {
+        "p95": false,
+        "longTasks": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "cpuThrottle": 4,
+      "durationMs": 31527.900000000373,
+      "distance": 18015,
+      "scrollEndEvents": 8,
+      "frames": 1328,
+      "averageFrameMs": 23.721686746987935,
+      "p95FrameMs": 50.099999999998545,
+      "maxFrameMs": 866,
+      "droppedFrames": 563,
+      "longTasks": [
+        {
+          "start": 11276.799999998882,
+          "duration": 68
+        },
+        {
+          "start": 12790.299999998882,
+          "duration": 105
+        },
+        {
+          "start": 14698.799999998882,
+          "duration": 63
+        },
+        {
+          "start": 15536.699999999255,
+          "duration": 72
+        },
+        {
+          "start": 15942.199999999255,
+          "duration": 115
+        },
+        {
+          "start": 16541.199999999255,
+          "duration": 51
+        },
+        {
+          "start": 23299.699999999255,
+          "duration": 64
+        },
+        {
+          "start": 26917.599999999627,
+          "duration": 106
+        },
+        {
+          "start": 31577,
+          "duration": 72
+        },
+        {
+          "start": 32430.299999998882,
+          "duration": 54
+        },
+        {
+          "start": 33887.5,
+          "duration": 58
+        },
+        {
+          "start": 35058,
+          "duration": 126
+        },
+        {
+          "start": 35203,
+          "duration": 61
+        },
+        {
+          "start": 38094.5,
+          "duration": 60
+        },
+        {
+          "start": 38448,
+          "duration": 64
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 409,
+        "bitmapDecodes": 0,
+        "liveBitmaps": 0,
+        "peakBitmaps": 0,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 0
+      },
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 6642176,
+        "endBytes": 7131204,
+        "peakBytes": 9173952
+      },
+      "trace": "before-mobile-trace.json.gz",
+      "passes": {
+        "p95": false,
+        "longTasks": false
+      }
+    }
+  ]
+}

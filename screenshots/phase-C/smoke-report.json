@@ -1,0 +1,220 @@
+[
+  {
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "screenshots": [
+      "desktop-000.png",
+      "desktop-025.png",
+      "desktop-050.png",
+      "desktop-080.png",
+      "desktop-100.png",
+      "desktop-room-living.png",
+      "desktop-room-kitchen.png",
+      "desktop-room-primary-bedroom.png",
+      "desktop-amenities.png",
+      "desktop-contact-success.png"
+    ],
+    "checks": [
+      {
+        "percent": 0,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "overlay": false,
+        "scrollY": 0,
+        "progress": 2.9239757532234637e-7,
+        "frame": 0
+      },
+      {
+        "percent": 25,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "overlay": false,
+        "scrollY": 855,
+        "progress": 0.25000021929818145,
+        "frame": 45
+      },
+      {
+        "percent": 50,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "overlay": false,
+        "scrollY": 1710,
+        "progress": 0.5000001461987876,
+        "frame": 90
+      },
+      {
+        "percent": 80,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "overlay": false,
+        "scrollY": 2736,
+        "progress": 0.800000058479515,
+        "frame": 143
+      },
+      {
+        "percent": 100,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "overlay": false,
+        "scrollY": 3420,
+        "progress": 1,
+        "frame": 179
+      },
+      {
+        "unitSwitching": true,
+        "keyboardTabs": true,
+        "hotspotsAndBackLinks": true
+      },
+      {
+        "navAnchors": true,
+        "contiguousSceneTracks": true
+      },
+      {
+        "inlineValidation": true,
+        "contactUnitSync": true,
+        "mockedFormErrorAndSuccess": true
+      }
+    ],
+    "initialEncodedBytes": 13567403
+  },
+  {
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "screenshots": [
+      "mobile-000.png",
+      "mobile-025.png",
+      "mobile-050.png",
+      "mobile-080.png",
+      "mobile-100.png",
+      "mobile-room-living.png",
+      "mobile-room-kitchen.png",
+      "mobile-room-primary-bedroom.png",
+      "mobile-amenities.png",
+      "mobile-contact-success.png"
+    ],
+    "checks": [
+      {
+        "percent": 0,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overlay": false,
+        "scrollY": 0,
+        "progress": 2.9239757532234637e-7,
+        "frame": 0
+      },
+      {
+        "percent": 25,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overlay": false,
+        "scrollY": 855,
+        "progress": 0.25000021929818145,
+        "frame": 28
+      },
+      {
+        "percent": 50,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overlay": false,
+        "scrollY": 1710,
+        "progress": 0.5000001461987876,
+        "frame": 56
+      },
+      {
+        "percent": 80,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overlay": false,
+        "scrollY": 2736,
+        "progress": 0.800000058479515,
+        "frame": 90
+      },
+      {
+        "percent": 100,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "overlay": false,
+        "scrollY": 3420,
+        "progress": 1,
+        "frame": 112
+      },
+      {
+        "unitSwitching": true,
+        "keyboardTabs": true,
+        "hotspotsAndBackLinks": true
+      },
+      {
+        "navAnchors": true,
+        "contiguousSceneTracks": true
+      },
+      {
+        "inlineValidation": true,
+        "contactUnitSync": true,
+        "mockedFormErrorAndSuccess": true
+      }
+    ],
+    "initialEncodedBytes": 4498787
+  },
+  {
+    "viewport": {
+      "name": "desktop-reduced",
+      "width": 1440,
+      "height": 900
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "screenshots": [
+      "desktop-reduced-hero.png",
+      "desktop-reduced-full-page.png",
+      "desktop-reduced-contact.png"
+    ],
+    "checks": [
+      {
+        "pins": 0,
+        "overflow": false,
+        "visibleCanvases": 0,
+        "animatedFrames": 0
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "name": "mobile-reduced",
+      "width": 390,
+      "height": 844
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "screenshots": [
+      "mobile-reduced-hero.png",
+      "mobile-reduced-full-page.png",
+      "mobile-reduced-contact.png"
+    ],
+    "checks": [
+      {
+        "pins": 0,
+        "overflow": false,
+        "visibleCanvases": 0,
+        "animatedFrames": 0
+      }
+    ]
+  }
+]

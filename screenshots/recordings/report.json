@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Kitchen hotspot clicked and loaded",
+    {
+      "backwardScrub": {
+        "forwardFrame": 122,
+        "backwardFrame": 24
+      }
+    },
+    "hero-to-plan fully scrolled",
+    "plan-to-living fully scrolled",
+    "plan-to-kitchen fully scrolled",
+    "plan-to-bedroom fully scrolled"
+  ],
+  "errors": []
+}

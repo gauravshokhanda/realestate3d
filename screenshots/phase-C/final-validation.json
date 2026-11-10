@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Final build: authenticated source video loaded and sought to 6.5s with decoded image data; prompt/watermark controls rendered",
+    "Final build: Videos tab has no mobile horizontal overflow"
+  ],
+  "comparisons": [
+    {
+      "capture": "desktop-000",
+      "changedPixelPercent": 0
+    },
+    {
+      "capture": "mobile-000",
+      "changedPixelPercent": 0
+    }
+  ],
+  "runtimeErrors": []
+}

@@ -1,0 +1,134 @@
+{
+  "label": "release-final",
+  "date": "2026-11-10T15:30:24.928Z",
+  "browser": "156.0.8078.80",
+  "scrollMode": "gesture",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz",
+    "logicalCpus": 4,
+    "memoryBytes": 12711841792,
+    "platform": "win32"
+  },
+  "url": "http://localhost:3400/aurelia",
+  "method": "Cold browser context; hero and fonts ready. CDP continuous mouse/touch gesture at 600 CSS px/s. Includes lazy decoding and scene setup. Dropped frames estimated against 60 Hz; long tasks from PerformanceObserver. Trace covers the same interval.",
+  "runs": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "cpuThrottle": 1,
+      "referenceCadence": {
+        "medianMs": 16.700000000000045,
+        "p95Ms": 17,
+        "approximateHz": 59.88023952095792
+      },
+      "durationMs": 28835.20000000298,
+      "distance": 16847,
+      "scrollEndEvents": 0,
+      "frames": 1659,
+      "averageFrameMs": 17.3620855937312,
+      "p95FrameMs": 17,
+      "maxFrameMs": 266.60000000000036,
+      "droppedFrames": 70,
+      "longTasks": [
+        {
+          "start": 11370.10000000149,
+          "duration": 64
+        },
+        {
+          "start": 16595.89999999851,
+          "duration": 50
+        },
+        {
+          "start": 26417.39999999851,
+          "duration": 92
+        },
+        {
+          "start": 26863.79999999702,
+          "duration": 101
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 8,
+        "bitmapDecodes": 643,
+        "liveBitmaps": 0,
+        "peakBitmaps": 298,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 1098547200,
+        "workerBitmapDecodes": 0
+      },
+      "readySceneHistory": [
+        "hero-to-plan",
+        "plan-to-living",
+        "plan-to-kitchen",
+        "plan-to-bedroom"
+      ],
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 5670236,
+        "endBytes": 6541800,
+        "peakBytes": 7224020
+      },
+      "trace": "release-final-desktop-trace.json.gz",
+      "passes": {
+        "p95": true,
+        "longTasks": false
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "cpuThrottle": 4,
+      "referenceCadence": {
+        "medianMs": 16.699999999999818,
+        "p95Ms": 16.80000000000001,
+        "approximateHz": 59.88023952095874
+      },
+      "durationMs": 30615.5,
+      "distance": 18015,
+      "scrollEndEvents": 1,
+      "frames": 1673,
+      "averageFrameMs": 18.282307232516466,
+      "p95FrameMs": 33.29999999999927,
+      "maxFrameMs": 100,
+      "droppedFrames": 163,
+      "longTasks": [
+        {
+          "start": 37882.29999999702,
+          "duration": 65
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 8,
+        "bitmapDecodes": 403,
+        "liveBitmaps": 0,
+        "peakBitmaps": 202,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 290880000,
+        "workerBitmapDecodes": 403
+      },
+      "readySceneHistory": [
+        "hero-to-plan",
+        "plan-to-living",
+        "plan-to-kitchen",
+        "plan-to-bedroom"
+      ],
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 6900584,
+        "endBytes": 6643808,
+        "peakBytes": 9006144
+      },
+      "trace": "release-final-mobile-trace.json.gz",
+      "passes": {
+        "p95": false,
+        "longTasks": false
+      }
+    }
+  ]
+}

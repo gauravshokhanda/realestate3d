@@ -1,0 +1,36 @@
+{
+  "acceptance": [
+    {
+      "device": "desktop",
+      "p95Pass": true,
+      "longTasksOver50": 6,
+      "longestTaskMs": 174
+    },
+    {
+      "device": "mobile",
+      "p95Pass": true,
+      "longTasksOver50": 2,
+      "longestTaskMs": 67
+    }
+  ],
+  "validated": [
+    {
+      "file": "before-desktop-trace.json.gz",
+      "events": 421820
+    },
+    {
+      "file": "before-mobile-trace.json.gz",
+      "events": 293957
+    },
+    {
+      "file": "after-desktop-trace.json.gz",
+      "events": 464356
+    },
+    {
+      "file": "after-mobile-trace.json.gz",
+      "events": 369104
+    }
+  ],
+  "phaseAccepted": false,
+  "reason": "Remaining long tasks exceed 50ms"
+}

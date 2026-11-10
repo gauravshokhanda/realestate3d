@@ -1,0 +1,53 @@
+{
+  "unitTests": {
+    "command": "pnpm exec tsx --conditions react-server --test tests/jobs.test.ts tests/storage.test.ts tests/admin.test.ts tests/frame-window.test.ts tests/window-renderer.test.ts tests/disk-space.test.ts",
+    "passed": 16
+  },
+  "importTests": {
+    "command": "pnpm test:import",
+    "passed": 5,
+    "fixture": "Synthetic 320x180 MP4; isolated legacy importer output"
+  },
+  "cacheBrowser": {
+    "command": "node scripts/check-d2.mjs",
+    "passed": [
+      "desktop",
+      "mobile",
+      "fallback",
+      "cold-jump"
+    ],
+    "captionReversals": true,
+    "paintContainment": true
+  },
+  "build": {
+    "command": "NEXT_DIST_DIR=.next-d2 pnpm build",
+    "passed": true
+  },
+  "initialSmokeIssues": [
+    {
+      "reason": "Four-minute queue-wide test deadline expired while adaptive size-budget encodes were progressing",
+      "change": "Extended test deadline to 15 minutes; extraction did not report a processing failure"
+    },
+    {
+      "reason": "Transport ECONNRESET on an idempotent admin read; server remained responsive",
+      "change": "Playwright maxRetries:2 on that GET only; no HTTP-status or mutation retries"
+    }
+  ],
+  "priorFullSmokePassed": true,
+  "finalFullSmoke": {
+    "passed": true,
+    "command": "pnpm smoke",
+    "at": "2026-11-10T17:28:04.955Z",
+    "suites": [
+      "public desktop/mobile",
+      "reduced motion",
+      "platform",
+      "authenticated admin",
+      "manual video + QC override + re-extraction audit",
+      "panorama",
+      "presentation/SEO"
+    ]
+  },
+  "paidVeoCalls": false,
+  "lintPassed": true
+}

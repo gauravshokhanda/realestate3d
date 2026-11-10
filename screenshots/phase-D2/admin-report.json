@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Storage capacity endpoint requires authentication and admin footer shows capacity and property usage",
+    "Protected admin, incorrect password handling, signed httpOnly SameSite=Strict session",
+    "Draft creation through UI, private draft URL, incomplete publication blocked with validation errors",
+    "A failed autosave preserves edits and retry successfully saves them",
+    "Streaming image uploads through UI, fake image rejected, draft media private with authenticated preview",
+    "Units and rooms edited, room keys derived, hotspot percentages saved, reorder persisted after reload",
+    "Uploaded matching MP4s through UI, all scenes extracted and ready, published and visited the new public tour",
+    "Origin/CSRF checks, reserved/duplicate slugs, stale version, cross-property assets and room-ID injection rejected",
+    "25 MB limit, real image validation, generated filenames, MIME independence, metadata stripping, 6000px cap and aspect/width warnings",
+    "Login rate limit: five attempts per ten-minute IP window, sixth returns 429 with Retry-After",
+    "Responsive admin has no horizontal overflow, unpublish hides page/media, delete cancellation/confirmation and logout work"
+  ],
+  "runtimeErrors": []
+}

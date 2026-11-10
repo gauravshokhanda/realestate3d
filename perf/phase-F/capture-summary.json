@@ -1,0 +1,216 @@
+[
+  {
+    "capture": "before",
+    "device": "desktop",
+    "average": 16.943816254417033,
+    "p95": 16.900000000001455,
+    "dropped": 29,
+    "longTasks": 0,
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "before",
+    "device": "mobile",
+    "average": 16.844462993878693,
+    "p95": 16.799999999999272,
+    "dropped": 20,
+    "longTasks": 0,
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "before-clean",
+    "device": "desktop",
+    "average": 16.95362404242785,
+    "p95": 16.900000000001455,
+    "dropped": 30,
+    "longTasks": 0,
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "before-clean",
+    "device": "mobile",
+    "average": 16.87239844184753,
+    "p95": 16.799999999999272,
+    "dropped": 23,
+    "longTasks": 0,
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "after",
+    "device": "desktop",
+    "average": 17.073918197984625,
+    "p95": 16.900000000000546,
+    "dropped": 42,
+    "longTasks": 0,
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "after",
+    "device": "mobile",
+    "average": 17.535858877964195,
+    "p95": 33.19999999999709,
+    "dropped": 91,
+    "longTasks": 0,
+    "passes": {
+      "p95": false,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "control-final",
+    "device": "desktop",
+    "average": 20.27260563380286,
+    "p95": 33.10000000000218,
+    "dropped": 308,
+    "longTasks": 28,
+    "passes": {
+      "p95": false,
+      "longTasks": false
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "control-final",
+    "device": "mobile",
+    "average": 17.52381776239912,
+    "p95": 17,
+    "dropped": 90,
+    "longTasks": 1,
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "after-final",
+    "device": "desktop",
+    "average": 18.44157591287639,
+    "p95": 17,
+    "dropped": 167,
+    "longTasks": 16,
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "after-final",
+    "device": "mobile",
+    "average": 19.02857142857148,
+    "p95": 33.30000000000291,
+    "dropped": 227,
+    "longTasks": 0,
+    "passes": {
+      "p95": false,
+      "longTasks": true
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "release-final",
+    "device": "desktop",
+    "average": 17.3620855937312,
+    "p95": 17,
+    "dropped": 70,
+    "longTasks": 4,
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  },
+  {
+    "capture": "release-final",
+    "device": "mobile",
+    "average": 18.282307232516466,
+    "p95": 33.29999999999927,
+    "dropped": 163,
+    "longTasks": 1,
+    "passes": {
+      "p95": false,
+      "longTasks": false
+    },
+    "sceneHistory": [
+      "hero-to-plan",
+      "plan-to-living",
+      "plan-to-kitchen",
+      "plan-to-bedroom"
+    ]
+  }
+]

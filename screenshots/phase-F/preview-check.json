@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "base": "http://localhost:3400",
+  "checks": [
+    {
+      "route": "/aurelia",
+      "status": 200,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/walkthrough-demo",
+      "status": 200,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/does-not-exist",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/admin/login",
+      "status": 200,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml"
+    },
+    {
+      "route": "/aurelia/og",
+      "status": 200,
+      "type": "image/jpeg"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "capture": "desktop-000",
+    "width": 1440,
+    "height": 900,
+    "meanChannelDifference": 0,
+    "changedPixelPercent": 0
+  },
+  {
+    "capture": "desktop-080",
+    "width": 1440,
+    "height": 900,
+    "meanChannelDifference": 0.0007620884773662551,
+    "changedPixelPercent": 0.01890432098765432
+  },
+  {
+    "capture": "mobile-000",
+    "width": 390,
+    "height": 844,
+    "meanChannelDifference": 0,
+    "changedPixelPercent": 0
+  }
+]

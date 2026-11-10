@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "Real loading progress and loader-to-hero reveal",
+    "Chapter navigation reactivates after mobile/desktop viewport changes; live motion preference disables the cursor",
+    "Desktop chapter navigation; contact focus and mocked success animation",
+    "Mobile menu/focus/Escape/touch cursor; contact focus and mocked success animation",
+    "Reduced motion, collection-to-property navigation, generated 1200x630 OG, missing OG 404, published sitemap"
+  ],
+  "errors": []
+}

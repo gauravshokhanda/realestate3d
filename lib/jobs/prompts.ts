@@ -1,0 +1,4 @@
+export const constraints = "Constant camera speed, one continuous move, no cuts, no people, no text, no camera shake, no flicker, walls and furniture stay fixed and do not morph, photorealistic architectural visualization, 16:9.";
+export function scenePrompt(room?: { label: string; description: string | null }) {
+  return room ? `Start on the isometric cutaway of the apartment. The camera glides smoothly down and forward toward ${room.label}${room.description ? ` (${room.description})` : ""}. It lowers to eye level and faces the room. End exactly on the final frame. ${constraints}` : `Start on the luxury building exterior. The camera glides smoothly forward and upward. As it gets close, the glass facade gently dissolves to reveal the apartment inside while the camera tilts down and settles into a 45-degree isometric cutaway view of the apartment. End exactly on the final frame. ${constraints}`;
+}

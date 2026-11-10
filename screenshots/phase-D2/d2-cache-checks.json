@@ -1,0 +1,79 @@
+[
+  {
+    "mode": "desktop",
+    "stats": {
+      "frames": 59,
+      "bytes": 217497600,
+      "reserved": 0,
+      "peak": 217497600,
+      "budget": 262144000,
+      "decoded": 195
+    },
+    "jumped": {
+      "targetFrame": "161",
+      "frame": "161",
+      "crossfadeAt": "3181.39999999851",
+      "crossfadeFrom": "47",
+      "crossfadeTo": "161"
+    },
+    "checks": "bounded window and budget; seek/reversal; actual crossfade where supported; debug counters; immutable frames; reduced-motion releases bitmap cache",
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "stats": {
+      "frames": 55,
+      "bytes": 50688000,
+      "reserved": 0,
+      "peak": 50688000,
+      "budget": 125829120,
+      "decoded": 100
+    },
+    "jumped": {
+      "targetFrame": "101",
+      "frame": "101",
+      "crossfadeAt": "2366",
+      "crossfadeFrom": "50",
+      "crossfadeTo": "101"
+    },
+    "checks": "bounded window and budget; seek/reversal; actual crossfade where supported; debug counters; immutable frames; reduced-motion releases bitmap cache",
+    "errors": []
+  },
+  {
+    "mode": "fallback",
+    "stats": {
+      "frames": 48,
+      "bytes": 176947200,
+      "reserved": 0,
+      "peak": 176947200,
+      "budget": 262144000,
+      "decoded": 73
+    },
+    "jumped": {
+      "targetFrame": "161",
+      "frame": "161"
+    },
+    "checks": "bounded window and budget; seek/reversal; actual crossfade where supported; debug counters; immutable frames; reduced-motion releases bitmap cache",
+    "errors": []
+  },
+  {
+    "mode": "cold-jump",
+    "stats": {
+      "frames": 44,
+      "bytes": 162201600,
+      "reserved": 3686400,
+      "peak": 165888000,
+      "budget": 262144000,
+      "decoded": 70
+    },
+    "jumped": {
+      "targetFrame": "161",
+      "frame": "161",
+      "crossfadeAt": "3785.7999999970198",
+      "crossfadeFrom": "156",
+      "crossfadeTo": "161"
+    },
+    "checks": "bounded window and budget; seek/reversal; actual crossfade where supported; debug counters; immutable frames; reduced-motion releases bitmap cache",
+    "errors": []
+  }
+]

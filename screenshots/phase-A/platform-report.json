@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Published-property index and styled 404",
+    "Media bytes preserved, MIME, caching, ETag 304, HEAD, missing/path-traversal rejection",
+    "1 DB-driven rooms, dynamic metadata, draft/processing hidden, publish without rebuild, cross-property lead rejection",
+    "8 DB-driven rooms, dynamic metadata, draft/processing hidden, publish without rebuild, cross-property lead rejection",
+    "SHA-256 verified all 1046 migrated frames against original assets"
+  ],
+  "runtimeErrors": []
+}

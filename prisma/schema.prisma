@@ -1,0 +1,96 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Property {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  name         String
+  tagline      String?
+  location     String?
+  status       String   @default("draft")
+  towerImage   String?
+  planImage    String?
+  heroCopy     String?
+  accentColor  String?  @default("#D8B67A")
+  presentation Json?
+  units        Unit[]
+  rooms        Room[]
+  amenities    Json?
+  scenes       Scene[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Unit {
+  id           String   @id @default(cuid())
+  propertyId   String
+  name         String
+  beds         Int
+  baths        Int
+  sqft         Int
+  price        String
+  roomSettings Json?
+  property     Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+}
+
+model Room {
+  id          String     @id @default(cuid())
+  propertyId  String
+  key         String
+  label       String
+  description String?
+  image       String?
+  hotspotX    Float
+  hotspotY    Float
+  order       Int        @default(0)
+  nodes       PanoNode[]
+  property    Property   @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+}
+
+model PanoNode {
+  id       String @id @default(cuid())
+  roomId   String
+  name     String
+  image    String
+  planX    Float?
+  planY    Float?
+  startYaw Float  @default(0)
+  links    Json?
+  room     Room   @relation(fields: [roomId], references: [id], onDelete: Cascade)
+}
+
+model Scene {
+  id               String    @id @default(cuid())
+  propertyId       String
+  key              String
+  fromImage        String
+  toImage          String
+  prompt           String
+  mode             String    @default("veo")
+  status           String    @default("queued")
+  progress         Int       @default(0)
+  error            String?
+  videoPath        String?
+  frameCount       Int?
+  mobileFrameCount Int?
+  trimStart        Float?
+  trimEnd          Float?
+  attempts         Int       @default(0)
+  settings         Json?
+  analysis         Json?
+  operationName    String?
+  nextAttemptAt    DateTime?
+  leaseOwner       String?
+  leaseExpiresAt   DateTime?
+  sequencePath     String?
+  duration         Float?
+  property         Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@unique([propertyId, key])
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "label": "before",
+    "device": "desktop",
+    "events": 476428,
+    "trace": "before-adaptive-desktop-trace.json.gz",
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "allScenesReady": true
+  },
+  {
+    "label": "before",
+    "device": "mobile",
+    "events": 405668,
+    "trace": "before-adaptive-mobile-trace.json.gz",
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "allScenesReady": true
+  },
+  {
+    "label": "after",
+    "device": "desktop",
+    "events": 462763,
+    "trace": "after-release-desktop-trace.json.gz",
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "allScenesReady": true
+  },
+  {
+    "label": "after",
+    "device": "mobile",
+    "events": 401183,
+    "trace": "after-release-mobile-trace.json.gz",
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "allScenesReady": true
+  }
+]

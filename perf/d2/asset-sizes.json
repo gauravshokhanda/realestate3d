@@ -1,0 +1,58 @@
+[
+  {
+    "property": "aurelia",
+    "scene": "hero-to-plan",
+    "source": "properties/aurelia/sequences/hero-to-plan",
+    "folder": "properties/aurelia/sequences-d2/hero-to-plan-5450c6d5",
+    "desktopBytes": 7748778,
+    "mobileBytes": 2473584
+  },
+  {
+    "property": "aurelia",
+    "scene": "plan-to-living",
+    "source": "properties/aurelia/sequences/plan-to-living",
+    "folder": "properties/aurelia/sequences-d2/plan-to-living-b3f30e71",
+    "desktopBytes": 7625860,
+    "mobileBytes": 1923408
+  },
+  {
+    "property": "aurelia",
+    "scene": "plan-to-kitchen",
+    "source": "properties/aurelia/sequences/plan-to-kitchen",
+    "folder": "properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d",
+    "desktopBytes": 7700580,
+    "mobileBytes": 2067902
+  },
+  {
+    "property": "aurelia",
+    "scene": "plan-to-bedroom",
+    "source": "properties/aurelia/sequences/plan-to-bedroom",
+    "folder": "properties/aurelia/sequences-d2/plan-to-bedroom-72f2b52f",
+    "desktopBytes": 8222366,
+    "mobileBytes": 1919466
+  },
+  {
+    "property": "walkthrough-demo",
+    "scene": "hero-to-plan",
+    "source": "properties/aurelia/sequences/hero-to-plan",
+    "folder": "properties/aurelia/sequences-d2/hero-to-plan-5450c6d5",
+    "desktopBytes": 7748778,
+    "mobileBytes": 2473584
+  },
+  {
+    "property": "walkthrough-demo",
+    "scene": "plan-to-kitchen",
+    "source": "properties/aurelia/sequences/plan-to-kitchen",
+    "folder": "properties/aurelia/sequences-d2/plan-to-kitchen-6c6bf66d",
+    "desktopBytes": 7700580,
+    "mobileBytes": 2067902
+  },
+  {
+    "property": "walkthrough-demo",
+    "scene": "plan-to-living",
+    "source": "properties/aurelia/sequences/plan-to-living",
+    "folder": "properties/aurelia/sequences-d2/plan-to-living-b3f30e71",
+    "desktopBytes": 7625860,
+    "mobileBytes": 1923408
+  }
+]

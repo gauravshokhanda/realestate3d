@@ -1,0 +1,18 @@
+[
+  {
+    "device": "desktop",
+    "tour": 200,
+    "missing": 404,
+    "login": 200,
+    "worker": false,
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "tour": 200,
+    "missing": 404,
+    "login": 200,
+    "worker": true,
+    "errors": []
+  }
+]

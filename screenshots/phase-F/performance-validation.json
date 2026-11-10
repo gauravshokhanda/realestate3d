@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "desktop: canvas DPR capped at 2",
+    "desktop: versioned frames cache immutably",
+    "desktop: all offscreen bitmaps released at contact",
+    "desktop: reverse navigation decodes and restores frame zero",
+    "desktop: changing reduced-motion preference releases bitmaps and restores visible static content",
+    "mobile: canvas DPR capped at 2",
+    "mobile: versioned frames cache immutably",
+    "mobile: all offscreen bitmaps released at contact",
+    "mobile: reverse navigation decodes and restores frame zero",
+    "mobile: changing reduced-motion preference releases bitmaps and restores visible static content",
+    "No OffscreenCanvas: the main-thread compatibility renderer loads and scrubs successfully"
+  ],
+  "comparisons": [
+    {
+      "viewport": "desktop",
+      "changedPixelPercent": 63.899537037037035,
+      "meanAbsoluteChannelError": 6.892872170781893,
+      "note": "High-quality canvas resampling changes some edge pixels; compare overall channel error on the 0-255 scale."
+    },
+    {
+      "canvasMeanAbsoluteChannelError": 0,
+      "note": "Phase F intentionally changes presentation. Original full-page difference is retained above; source-frame crop/resampling must still match independently."
+    }
+  ],
+  "runtimeErrors": []
+}

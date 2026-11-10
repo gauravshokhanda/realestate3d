@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "desktop: canvas DPR capped at 2",
+    "desktop: versioned frames cache immutably",
+    "desktop: all offscreen bitmaps released at contact",
+    "desktop: reverse navigation decodes and restores frame zero",
+    "desktop: changing reduced-motion preference releases bitmaps and restores visible static content",
+    "mobile: canvas DPR capped at 2",
+    "mobile: versioned frames cache immutably",
+    "mobile: all offscreen bitmaps released at contact",
+    "mobile: reverse navigation decodes and restores frame zero",
+    "mobile: changing reduced-motion preference releases bitmaps and restores visible static content",
+    "No OffscreenCanvas: the main-thread compatibility renderer loads and scrubs successfully"
+  ],
+  "comparisons": [
+    {
+      "viewport": "desktop",
+      "changedPixelPercent": 2.608179012345679,
+      "meanAbsoluteChannelError": 0.31013374485596706,
+      "note": "High-quality canvas resampling changes some edge pixels; compare overall channel error on the 0-255 scale."
+    }
+  ],
+  "runtimeErrors": []
+}

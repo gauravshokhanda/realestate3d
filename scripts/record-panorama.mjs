@@ -1,0 +1,34 @@
+import { chromium } from "playwright";
+import { mkdir } from "node:fs/promises";
+import path from "node:path";
+const base = process.env.SMOKE_URL ?? "http://localhost:3400";
+const output = path.resolve(process.env.SMOKE_OUTPUT ?? "screenshots/phase-E"); await mkdir(output, { recursive: true });
+const browser = await chromium.launch({ channel: "chrome", headless: true });
+try {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, recordVideo: { dir: output, size: { width: 1440, height: 900 } } });
+  const page = await context.newPage();
+  await page.goto(`${base}/walkthrough-demo`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor({ timeout: 90000 });
+  const destination = await page.locator('#room-living [data-scene]').evaluate((element) => element.getBoundingClientRect().top + scrollY + Number(element.dataset.scrollLength) - 1);
+  const cdp = await context.newCDPSession(page);
+  await cdp.send("Input.synthesizeScrollGesture", { x: 720, y: 450, yDistance: -Math.ceil(destination), speed: 600, preventFling: true, gestureSourceType: "mouse" });
+  const launch = page.locator('#room-living').getByRole("button", { name: /Explore in 360/ }); await launch.waitFor({ timeout: 90000 });
+  await page.screenshot({ path: path.join(output, "demo-room-landed.png") });
+  await launch.click(); await page.locator('[data-pano-ready="true"]').waitFor({ timeout: 90000 });
+  await page.locator(".pano-map-image img").evaluate((image) => image.decode()); await page.waitForTimeout(350);
+  await page.screenshot({ path: path.join(output, "demo-desktop-360.png") });
+  await page.mouse.move(720, 450); await page.mouse.down(); await page.mouse.move(620, 420, { steps: 24 }); await page.mouse.up(); await page.waitForTimeout(600);
+  await page.getByRole("button", { name: "Walk to Kitchen test chart", exact: true }).click();
+  await page.locator('.pano-topbar h2').filter({ hasText: "Kitchen test chart" }).waitFor(); await page.waitForTimeout(700);
+  await page.getByRole("button", { name: "Go to Living test chart", exact: true }).click(); await page.waitForTimeout(700);
+  await page.keyboard.press("Escape"); await page.getByRole("dialog").waitFor({ state: "detached" });
+  const remaining = await page.evaluate(() => document.documentElement.scrollHeight - innerHeight - scrollY);
+  await cdp.send("Input.synthesizeScrollGesture", { x: 720, y: 450, yDistance: -Math.ceil(remaining + 10), speed: 600, preventFling: true, gestureSourceType: "mouse" }); await page.waitForTimeout(700);
+  const video = page.video(); await context.close(); await video.saveAs(path.join(output, "walkthrough-scroll.webm")); await video.delete();
+  const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, reducedMotion: "reduce" }); const phone = await mobile.newPage();
+  await phone.goto(`${base}/walkthrough-demo`, { waitUntil: "networkidle" });
+  await phone.locator('#room-living').getByRole("button", { name: /Explore in 360/ }).tap(); await phone.locator('[data-pano-ready="true"]').waitFor({ timeout: 90000 });
+  await phone.locator(".pano-map-image img").evaluate((image) => image.decode()); await phone.waitForTimeout(350);
+  await phone.screenshot({ path: path.join(output, "demo-mobile-360.png") }); await mobile.close();
+  console.log(path.join(output, "walkthrough-scroll.webm"));
+} finally { await browser.close(); }

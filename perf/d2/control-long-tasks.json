@@ -1,0 +1,1167 @@
+{
+  "configuration": "control",
+  "taskCount": 7,
+  "method": "PerformanceObserver task start aligned to d2-scroll-start trace marker on the renderer main thread. Native operation durations are unions of clipped trace spans, inclusive/nested and must not be summed across names. CPU sample times identify actually sampled functions, not inferred causes. Missing native/JS detail remains unattributed. Source maps used only when present in ATTRIBUTION_BUILD.",
+  "tasks": [
+    {
+      "configuration": "control",
+      "iteration": 1,
+      "device": "desktop",
+      "secondsIntoScroll": 10.90910000000149,
+      "durationMs": 78,
+      "scene": "plan-to-kitchen",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 10909.042,
+        "durationMs": 78.654,
+        "pid": 18072,
+        "tid": 21348
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 72.148
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 3.542
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 3.249
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 3.213
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 1.211
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 0.862
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.594
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 0.38
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.277
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.037
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.032
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.011
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 27.697000000000006,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-1-trace.json.gz",
+      "cpuProfile": "control-desktop-1-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 4,
+      "device": "desktop",
+      "secondsIntoScroll": 4.50479999999702,
+      "durationMs": 51,
+      "scene": "hero-to-plan",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "RunTask",
+        "startOffsetMs": 4504.803,
+        "durationMs": 0.021,
+        "pid": 24220,
+        "tid": 16496
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 42.114
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 5.915
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 5.584
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 3.789
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 2.853
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 2.475
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 0.839
+        },
+        {
+          "name": "Layout",
+          "inclusiveMs": 0.413
+        },
+        {
+          "name": "Paint",
+          "inclusiveMs": 0.324
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.288
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.204
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.063
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.041
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.01
+        },
+        {
+          "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+          "inclusiveMs": 0.007
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 60.321000000000005,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-4-trace.json.gz",
+      "cpuProfile": "control-desktop-4-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 5,
+      "device": "desktop",
+      "secondsIntoScroll": 3.73770000000298,
+      "durationMs": 53,
+      "scene": "hero-to-plan",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 3737.641,
+        "durationMs": 53.913,
+        "pid": 13124,
+        "tid": 18936
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 41.123
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 6.781
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 5.923
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 4.961
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 2.251
+        },
+        {
+          "name": "Paint",
+          "inclusiveMs": 1.319
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 1.28
+        },
+        {
+          "name": "Layout",
+          "inclusiveMs": 1.121
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 0.603
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.471
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.336
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.05
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.047
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.009
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "m",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 84038,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "ee",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 93450,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 53.532,
+          "original": null
+        },
+        {
+          "functionName": "setScroll",
+          "scriptId": "14",
+          "url": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "lineNumber": 0,
+          "columnNumber": 8382,
+          "sampledMs": 2.258,
+          "original": null
+        },
+        {
+          "functionName": "requestAnimationFrame",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 0.186,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-5-trace.json.gz",
+      "cpuProfile": "control-desktop-5-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 5,
+      "device": "desktop",
+      "secondsIntoScroll": 5.20260000000149,
+      "durationMs": 72,
+      "scene": "hero-to-plan",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 5202.532,
+        "durationMs": 72.32,
+        "pid": 13124,
+        "tid": 18936
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 67.538
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 1.793
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 1.586
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 1.098
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 1.039
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 0.863
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 0.772
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.325
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.228
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.125
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.067
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.037
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 71.85100000000003,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-5-trace.json.gz",
+      "cpuProfile": "control-desktop-5-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 5,
+      "device": "desktop",
+      "secondsIntoScroll": 9.517,
+      "durationMs": 69,
+      "scene": "plan-to-living",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "RunTask",
+        "startOffsetMs": 9517.018,
+        "durationMs": 69.414,
+        "pid": 13124,
+        "tid": 18936
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 61.999
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 4.752
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 4.286
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 4.166
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 1.681
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 0.996
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 0.524
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.293
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.143
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.122
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.036
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.01
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 69.14800000000001,
+          "original": null
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "lineNumber": 0,
+          "columnNumber": 21414,
+          "sampledMs": 1.148,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-5-trace.json.gz",
+      "cpuProfile": "control-desktop-5-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 5,
+      "device": "desktop",
+      "secondsIntoScroll": 11.9825,
+      "durationMs": 54,
+      "scene": "plan-to-kitchen",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "RunTask",
+        "startOffsetMs": 11982.542,
+        "durationMs": 54.932,
+        "pid": 13124,
+        "tid": 18936
+      },
+      "operations": [
+        {
+          "name": "Commit",
+          "inclusiveMs": 48.27
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 3.403
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 3.011
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 2.891
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 0.87
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 0.595
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.546
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 0.406
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.255
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.048
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.033
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.01
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 53.757999999999996,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-5-trace.json.gz",
+      "cpuProfile": "control-desktop-5-cpu.json.gz"
+    },
+    {
+      "configuration": "control",
+      "iteration": 5,
+      "device": "desktop",
+      "secondsIntoScroll": 18.16530000000447,
+      "durationMs": 59,
+      "scene": "plan-to-bedroom",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 18165.208,
+        "durationMs": 59.4,
+        "pid": 13124,
+        "tid": 18936
+      },
+      "operations": [
+        {
+          "name": "Layerize",
+          "inclusiveMs": 40.959
+        },
+        {
+          "name": "Commit",
+          "inclusiveMs": 12.854000007629395
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 3.454
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 3.095
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 1.957
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 1.852
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 1.284
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 0.756
+        },
+        {
+          "name": "HitTest",
+          "inclusiveMs": 0.13199999237060547
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.039
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.033
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.026
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4200/_next/static/chunks/fd99ade1-64e808e4784be026.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onWheel",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 4265,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "i.wheelHandler",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 40183,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 43100,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "c",
+          "script": "http://localhost:4200/_next/static/chunks/app/%5Bslug%5D/page-f1f88637fdc3c28c.js",
+          "line": 1,
+          "column": 34343,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onScrollEnd",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 7792,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4200/_next/static/chunks/d5df7396-34f7c935e811a747.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4200/_next/static/chunks/8591-b88917790b2d29bf.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 57.356,
+          "original": null
+        }
+      ],
+      "trace": "control-desktop-5-trace.json.gz",
+      "cpuProfile": "control-desktop-5-cpu.json.gz"
+    }
+  ]
+}

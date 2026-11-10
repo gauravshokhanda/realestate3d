@@ -1,0 +1,76 @@
+{
+  "label": "after",
+  "date": "2026-11-09T15:29:51.620Z",
+  "browser": "156.0.8078.80",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz",
+    "logicalCpus": 4,
+    "memoryBytes": 12711841792,
+    "platform": "win32"
+  },
+  "url": "http://localhost:3400/aurelia",
+  "method": "Cold browser context; hero and fonts ready before measurement. Native instant scroll at 600 CSS px/s on rAF. Frame times include lazy decoding and scene setup. Dropped frames estimated against 60 Hz; long tasks from PerformanceObserver. Chrome trace covers the same interval.",
+  "runs": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "cpuThrottle": 1,
+      "durationMs": 28119.29999999702,
+      "distance": 16851,
+      "frames": 1568,
+      "averageFrameMs": 17.912882653061246,
+      "p95FrameMs": 16.900000000001455,
+      "maxFrameMs": 516.2999999999993,
+      "droppedFrames": 118,
+      "longTasks": [
+        {
+          "start": 16512.69999999553,
+          "duration": 184
+        },
+        {
+          "start": 22291.79999999702,
+          "duration": 126
+        },
+        {
+          "start": 23872.5,
+          "duration": 52
+        },
+        {
+          "start": 24780.89999999851,
+          "duration": 58
+        },
+        {
+          "start": 28986,
+          "duration": 113
+        },
+        {
+          "start": 35522.69999999553,
+          "duration": 198
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 8,
+        "bitmapDecodes": 643,
+        "liveBitmaps": 0,
+        "peakBitmaps": 291,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 1072742400
+      },
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 5623976,
+        "endBytes": 5808276,
+        "peakBytes": 6692668
+      },
+      "trace": "intermediate-desktop-trace.json.gz",
+      "passes": {
+        "p95": true,
+        "longTasks": false
+      }
+    }
+  ],
+  "incomplete": "Mobile trace write failed with ENOSPC; no final mobile metrics were saved."
+}

@@ -1,0 +1,492 @@
+{
+  "configuration": "window-initial",
+  "taskCount": 2,
+  "method": "PerformanceObserver task start aligned to d2-scroll-start trace marker on the renderer main thread. Native operation durations are unions of clipped trace spans, inclusive/nested and must not be summed across names. CPU sample times identify actually sampled functions, not inferred causes. Missing native/JS detail remains unattributed. Source maps used only when present in ATTRIBUTION_BUILD.",
+  "tasks": [
+    {
+      "configuration": "window-initial",
+      "iteration": 2,
+      "device": "mobile",
+      "secondsIntoScroll": 1.6918999999985098,
+      "durationMs": 55,
+      "scene": "hero-to-plan",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 1691.865,
+        "durationMs": 55.321,
+        "pid": 23764,
+        "tid": 14132
+      },
+      "operations": [
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 39.411
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 38.538
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 37.66
+        },
+        {
+          "name": "Layout",
+          "inclusiveMs": 5.144
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 3.264
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 1.446
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 1.22
+        },
+        {
+          "name": "Commit",
+          "inclusiveMs": 1.174
+        },
+        {
+          "name": "Paint",
+          "inclusiveMs": 1.047
+        },
+        {
+          "name": "v8.newInstance",
+          "inclusiveMs": 0.379
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.187
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.014
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "r",
+          "script": "http://localhost:4100/_next/static/chunks/d5df7396-9a2208d0019e6e5d.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "m",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 84038,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "ee",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 93450,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 18.803,
+          "original": null
+        },
+        {
+          "functionName": "np",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 128200,
+          "sampledMs": 3.689,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs",
+            "line": 14,
+            "column": 38
+          }
+        },
+        {
+          "functionName": "readKeyframes",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 86638,
+          "sampledMs": 3.6029999999999998,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs",
+            "line": 14,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 91006,
+          "sampledMs": 3.52,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/NativeAnimation.mjs",
+            "line": 31,
+            "column": 26
+          }
+        },
+        {
+          "functionName": "tick",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 129301,
+          "sampledMs": 3.5039999999999996,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs",
+            "line": 118,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 134181,
+          "sampledMs": 2.177,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/AsyncMotionValueAnimation.mjs",
+            "line": 48,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 131526,
+          "sampledMs": 2.017,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/JSAnimation.mjs",
+            "line": 306,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "test",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 78718,
+          "sampledMs": 2.01,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/value/types/complex/index.mjs",
+            "line": 6,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "nm",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 132704,
+          "sampledMs": 2.009,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/NativeAnimationExtended.mjs",
+            "line": 16,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "nu",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 126947,
+          "sampledMs": 2.001,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs",
+            "line": 9,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 127391,
+          "sampledMs": 1.848,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/utils/interpolate.mjs",
+            "line": 54,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 135098,
+          "sampledMs": 1.521,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/motion-dom@12.43.0/node_modules/motion-dom/dist/es/animation/waapi/supports/waapi.mjs",
+            "line": 18,
+            "column": 1
+          }
+        }
+      ],
+      "trace": "window-initial-mobile-2-trace.json.gz",
+      "cpuProfile": "window-initial-mobile-2-cpu.json.gz"
+    },
+    {
+      "configuration": "window-initial",
+      "iteration": 5,
+      "device": "mobile",
+      "secondsIntoScroll": 18.38570000000298,
+      "durationMs": 55,
+      "scene": "plan-to-kitchen",
+      "performanceObserver": [
+        {
+          "name": "unknown",
+          "containerType": "window",
+          "containerSrc": ""
+        }
+      ],
+      "traceTask": {
+        "name": "ThreadControllerImpl::RunTask",
+        "startOffsetMs": 18385.65,
+        "durationMs": 54.914,
+        "pid": 21192,
+        "tid": 9848
+      },
+      "operations": [
+        {
+          "name": "Paint",
+          "inclusiveMs": 28.872
+        },
+        {
+          "name": "v8.callFunction",
+          "inclusiveMs": 9.509
+        },
+        {
+          "name": "FunctionCall",
+          "inclusiveMs": 8.882
+        },
+        {
+          "name": "EventDispatch",
+          "inclusiveMs": 8.046
+        },
+        {
+          "name": "UpdateLayoutTree",
+          "inclusiveMs": 3.489
+        },
+        {
+          "name": "Layerize",
+          "inclusiveMs": 2.536
+        },
+        {
+          "name": "Commit",
+          "inclusiveMs": 1.52
+        },
+        {
+          "name": "PrePaint",
+          "inclusiveMs": 1.325
+        },
+        {
+          "name": "FireAnimationFrame",
+          "inclusiveMs": 1.238
+        },
+        {
+          "name": "Layout",
+          "inclusiveMs": 1.193
+        },
+        {
+          "name": "IntersectionObserverController::computeIntersections",
+          "inclusiveMs": 0.467
+        },
+        {
+          "name": "ScrollLayer",
+          "inclusiveMs": 0.103
+        },
+        {
+          "name": "UpdateLayer",
+          "inclusiveMs": 0.039
+        },
+        {
+          "name": "PaintImage",
+          "inclusiveMs": 0.022
+        },
+        {
+          "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+          "inclusiveMs": 0.008
+        }
+      ],
+      "scriptCalls": [
+        {
+          "function": "cs",
+          "script": "http://localhost:4100/_next/static/chunks/fd99ade1-b93accd6f14e05dd.js",
+          "line": 1,
+          "column": 163464,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "eb",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 33918,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "a",
+          "script": "http://localhost:4100/_next/static/chunks/app/%5Bslug%5D/page-3fee3f63b1ca2d97.js",
+          "line": 1,
+          "column": 10778,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "onNativeScroll",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 11941,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "r",
+          "script": "http://localhost:4100/_next/static/chunks/d5df7396-9a2208d0019e6e5d.js",
+          "line": 1,
+          "column": 14278,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "t",
+          "script": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "line": 1,
+          "column": 54467,
+          "operation": "FunctionCall"
+        },
+        {
+          "function": "M",
+          "script": "http://localhost:4100/_next/static/chunks/app/%5Bslug%5D/page-3fee3f63b1ca2d97.js",
+          "line": 1,
+          "column": 20640,
+          "operation": "FunctionCall"
+        }
+      ],
+      "sampledFunctions": [
+        {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1,
+          "sampledMs": 49,
+          "original": null
+        },
+        {
+          "functionName": "eH",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 37848,
+          "sampledMs": 1.958,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/gsap@3.15.1/node_modules/gsap/ScrollTrigger.js",
+            "line": 682,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 21414,
+          "sampledMs": 1.43,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/gsap@3.15.1/node_modules/gsap/Observer.js",
+            "line": 120,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "a",
+          "scriptId": "15",
+          "url": "http://localhost:4100/_next/static/chunks/app/%5Bslug%5D/page-3fee3f63b1ca2d97.js",
+          "lineNumber": 0,
+          "columnNumber": 10777,
+          "sampledMs": 0.894,
+          "original": {
+            "source": "webpack://_N_E/./components/Nav.tsx",
+            "line": 14,
+            "column": 20
+          }
+        },
+        {
+          "functionName": "eI",
+          "scriptId": "14",
+          "url": "http://localhost:4100/_next/static/chunks/8591-4a7f5a3621a6fcff.js",
+          "lineNumber": 0,
+          "columnNumber": 36475,
+          "sampledMs": 0.642,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/gsap@3.15.1/node_modules/gsap/ScrollTrigger.js",
+            "line": 581,
+            "column": 1
+          }
+        },
+        {
+          "functionName": "send",
+          "scriptId": "15",
+          "url": "http://localhost:4100/_next/static/chunks/app/%5Bslug%5D/page-3fee3f63b1ca2d97.js",
+          "lineNumber": 0,
+          "columnNumber": 13477,
+          "sampledMs": 0.459,
+          "original": {
+            "source": "webpack://_N_E/./lib/window-renderer.ts",
+            "line": 45,
+            "column": 11,
+            "name": "send"
+          }
+        },
+        {
+          "functionName": "r",
+          "scriptId": "11",
+          "url": "http://localhost:4100/_next/static/chunks/d5df7396-9a2208d0019e6e5d.js",
+          "lineNumber": 0,
+          "columnNumber": 14277,
+          "sampledMs": 0.065,
+          "original": {
+            "source": "webpack://_N_E/./node_modules/.pnpm/gsap@3.15.1/node_modules/gsap/gsap-core.js",
+            "line": 1284,
+            "column": 1
+          }
+        }
+      ],
+      "trace": "window-initial-mobile-5-trace.json.gz",
+      "cpuProfile": "window-initial-mobile-5-cpu.json.gz"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "failure": null,
+  "checks": [
+    "Admin uploads two decoded 4096x2048 charts, creates 2048px mobile copies, warns on ratio/width and rejects fake images; draft media stays private",
+    "Admin floor-plan placement, drag-to-set starting yaw and exact yaw/pitch arrows save in both directions",
+    "Panorama API rejects stale revisions, foreign room/node/image/link IDs, invalid coordinates and cross-origin writes",
+    "Viewpoint delete cancellation preserves the graph; confirmed deletion removes incoming arrows; mobile admin has no horizontal overflow",
+    "Public 360 button is absent before landing and appears after the room's final frame is painted",
+    "Desktop drag updates heading cone; walking arrows and cross-room minimap work; focus stays trapped and returns with unchanged scroll; close/reopen releases tracked GPU textures",
+    "Mobile uses only 2048px panorama variants, minimap tap works, reduced-motion entry works, and Aurelia without panoramas keeps its existing UI"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "resources": [
+    {
+      "device": "desktop",
+      "contexts": 2,
+      "lostContexts": 1,
+      "texturesCreated": 9,
+      "liveTextures": 0,
+      "liveObjectUrls": 0
+    },
+    {
+      "device": "desktop-after-reopen-transition-and-pending-load-close",
+      "contexts": 5,
+      "lostContexts": 4,
+      "texturesCreated": 25,
+      "liveTextures": 0,
+      "liveObjectUrls": 0
+    },
+    {
+      "device": "mobile",
+      "contexts": 2,
+      "lostContexts": 1,
+      "texturesCreated": 6,
+      "liveTextures": 0,
+      "liveObjectUrls": 0
+    }
+  ],
+  "physicalGyroscopeTested": false
+}

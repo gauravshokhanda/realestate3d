@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next-phase-a/types/**/*.ts",
+    ".next-phase-b-dev/types/**/*.ts",
+    ".next-phase-b/types/**/*.ts",
+    ".next-phase-c-dev/types/**/*.ts",
+    ".next-phase-c-final/types/**/*.ts",
+    ".next-phase-c/types/**/*.ts",
+    ".next-phase-d-adaptive/types/**/*.ts",
+    ".next-phase-d-final/types/**/*.ts",
+    ".next-phase-d-offscreen-final/types/**/*.ts",
+    ".next-phase-d-offscreen/types/**/*.ts",
+    ".next-phase-d-worker/types/**/*.ts",
+    ".next-phase-d/types/**/*.ts",
+    ".next-phase-e-dev/types/**/*.ts",
+    ".next-phase-e-final/types/**/*.ts",
+    ".next-phase-e/types/**/*.ts",
+    ".next-phase-f/types/**/*.ts",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    ".next-d2/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next-phase1-cache",
+    ".sequence-test-*",
+    "storage"
+  ]
+}

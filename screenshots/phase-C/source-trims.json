@@ -1,0 +1,42 @@
+[
+  {
+    "key": "hero-to-plan",
+    "duration": 10.03,
+    "width": 1280,
+    "height": 720,
+    "start": 0,
+    "end": 7.5,
+    "similarity": 0.9802117374727669,
+    "warning": null
+  },
+  {
+    "key": "plan-to-living",
+    "duration": 10.03,
+    "width": 1280,
+    "height": 720,
+    "start": 0,
+    "end": 5.833333333333333,
+    "similarity": 0.96515522875817,
+    "warning": null
+  },
+  {
+    "key": "plan-to-kitchen",
+    "duration": 10.03,
+    "width": 1280,
+    "height": 720,
+    "start": 0,
+    "end": 8.333333333333334,
+    "similarity": 0.8630804057734205,
+    "warning": "No confident target-image arrival was found. Check the trim preview before publishing."
+  },
+  {
+    "key": "plan-to-bedroom",
+    "duration": 10.03,
+    "width": 1280,
+    "height": 720,
+    "start": 0,
+    "end": 6.666666666666667,
+    "similarity": 0.9800023828976034,
+    "warning": null
+  }
+]

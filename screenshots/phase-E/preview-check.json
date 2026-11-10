@@ -1,0 +1,20 @@
+[
+  {
+    "device": "desktop",
+    "aurelia": 200,
+    "demo": 200,
+    "missing": 404,
+    "login": 200,
+    "arrowAndMinimap": true,
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "aurelia": 200,
+    "demo": 200,
+    "missing": 404,
+    "login": 200,
+    "arrowAndMinimap": true,
+    "errors": []
+  }
+]

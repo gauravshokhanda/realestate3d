@@ -1,0 +1,92 @@
+[
+  {
+    "capture": "before",
+    "device": "desktop",
+    "events": 465009,
+    "referenceCadence": {
+      "medianMs": 16.699999999999818,
+      "p95Ms": 16.90000000000009,
+      "approximateHz": 59.88023952095874
+    },
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "allScenesReady": true
+  },
+  {
+    "capture": "before",
+    "device": "mobile",
+    "events": 356828,
+    "referenceCadence": {
+      "medianMs": 16.699999999999932,
+      "p95Ms": 16.799999999999955,
+      "approximateHz": 59.88023952095833
+    },
+    "passes": {
+      "p95": false,
+      "longTasks": false
+    },
+    "allScenesReady": true
+  },
+  {
+    "capture": "after",
+    "device": "desktop",
+    "events": 448768,
+    "referenceCadence": {
+      "medianMs": 16.699999999999932,
+      "p95Ms": 16.90000000000009,
+      "approximateHz": 59.88023952095833
+    },
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "allScenesReady": true
+  },
+  {
+    "capture": "after",
+    "device": "mobile",
+    "events": 390297,
+    "referenceCadence": {
+      "medianMs": 16.699999999999932,
+      "p95Ms": 16.800000000000068,
+      "approximateHz": 59.88023952095833
+    },
+    "passes": {
+      "p95": true,
+      "longTasks": true
+    },
+    "allScenesReady": true
+  },
+  {
+    "capture": "after-final",
+    "device": "desktop",
+    "events": 464349,
+    "referenceCadence": {
+      "medianMs": 16.699999999999932,
+      "p95Ms": 16.90000000000009,
+      "approximateHz": 59.88023952095833
+    },
+    "passes": {
+      "p95": true,
+      "longTasks": false
+    },
+    "allScenesReady": true
+  },
+  {
+    "capture": "after-final",
+    "device": "mobile",
+    "events": 363820,
+    "referenceCadence": {
+      "medianMs": 16.69999999999999,
+      "p95Ms": 17,
+      "approximateHz": 59.88023952095813
+    },
+    "passes": {
+      "p95": false,
+      "longTasks": false
+    },
+    "allScenesReady": true
+  }
+]

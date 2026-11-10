@@ -1,0 +1,118 @@
+{
+  "label": "scripted-after",
+  "date": "2026-11-09T15:53:29.521Z",
+  "browser": "156.0.8078.80",
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz",
+    "logicalCpus": 4,
+    "memoryBytes": 12711841792,
+    "platform": "win32"
+  },
+  "url": "http://localhost:3400/aurelia",
+  "method": "Cold browser context; hero and fonts ready before measurement. Native instant scroll at 600 CSS px/s on rAF. Frame times include lazy decoding and scene setup. Dropped frames estimated against 60 Hz; long tasks from PerformanceObserver. Chrome trace covers the same interval.",
+  "runs": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "cpuThrottle": 1,
+      "durationMs": 28114,
+      "distance": 16851,
+      "frames": 1594,
+      "averageFrameMs": 17.62076537013804,
+      "p95FrameMs": 16.80000000000291,
+      "maxFrameMs": 549.6999999999989,
+      "droppedFrames": 92,
+      "longTasks": [],
+      "decodedImages": {
+        "imageDecodes": 8,
+        "bitmapDecodes": 643,
+        "liveBitmaps": 0,
+        "peakBitmaps": 297,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 1094860800
+      },
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 5396344,
+        "endBytes": 5650788,
+        "peakBytes": 6432160
+      },
+      "trace": "scripted-after-desktop-trace.json.gz",
+      "passes": {
+        "p95": true,
+        "longTasks": true
+      }
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "cpuThrottle": 4,
+      "durationMs": 30101.20000000298,
+      "distance": 18015,
+      "frames": 1334,
+      "averageFrameMs": 22.516041979010534,
+      "p95FrameMs": 33.400000000001455,
+      "maxFrameMs": 99.89999999999964,
+      "droppedFrames": 469,
+      "longTasks": [
+        {
+          "start": 7931.79999999702,
+          "duration": 59
+        },
+        {
+          "start": 9077.39999999851,
+          "duration": 55
+        },
+        {
+          "start": 9421.5,
+          "duration": 57
+        },
+        {
+          "start": 10747.39999999851,
+          "duration": 82
+        },
+        {
+          "start": 15020.39999999851,
+          "duration": 51
+        },
+        {
+          "start": 23456.60000000149,
+          "duration": 57
+        },
+        {
+          "start": 29971.19999999553,
+          "duration": 55
+        },
+        {
+          "start": 34857.39999999851,
+          "duration": 50
+        }
+      ],
+      "decodedImages": {
+        "imageDecodes": 8,
+        "bitmapDecodes": 403,
+        "liveBitmaps": 0,
+        "peakBitmaps": 201,
+        "liveBitmapBytes": 0,
+        "peakBitmapBytes": 289440000
+      },
+      "readyScenes": [],
+      "heap": {
+        "startBytes": 5299384,
+        "endBytes": 5816808,
+        "peakBytes": 6604832
+      },
+      "trace": "scripted-after-mobile-trace.json.gz",
+      "passes": {
+        "p95": false,
+        "longTasks": false
+      }
+    }
+  ]
+}
