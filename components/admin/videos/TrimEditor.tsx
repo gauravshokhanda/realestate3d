@@ -1,0 +1,15 @@
+"use client";
+import { useRef, useState } from "react";
+import type { SceneView, VideoSettings } from "@/lib/jobs/schema";
+import { Field } from "../Fields";
+export default function TrimEditor({ scene, settings, submit, close }: { scene: SceneView; settings: VideoSettings; submit: (body: unknown) => Promise<void>; close: () => void }) {
+  const video = useRef<HTMLVideoElement>(null);
+  const [start, setStart] = useState(scene.trimStart ?? 0), [end, setEnd] = useState(scene.trimEnd ?? scene.duration ?? 1), [time, setTime] = useState(0), [busy, setBusy] = useState(false), [error, setError] = useState("");
+  return <section className="admin-video-trim" aria-label={`Trim ${scene.label}`}><h3>Find the arrival.</h3><p>Scrub the source, set the useful movement, then rebuild both sequences. Source timestamps include frozen frames. Auto trim clears both overrides.</p>
+    <video ref={video} src={scene.videoUrl ?? undefined} controls preload="metadata" onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)} aria-label={`${scene.label} source preview`} />
+    <label className="admin-field"><span>Preview position: {time.toFixed(2)}s</span><input type="range" min={0} max={scene.duration ?? 1} step={0.01} value={time} onChange={(e) => { const value = Number(e.target.value); setTime(value); if (video.current) video.current.currentTime = value; }} /></label>
+    <div className="admin-form-grid"><Field label="Trim start (seconds)" type="number" min={0} max={scene.duration ?? 120} step={0.01} value={start} onChange={(e) => setStart(Number(e.target.value))} /><Field label="Trim end (seconds)" type="number" min={0.04} max={scene.duration ?? 120} step={0.01} value={end} onChange={(e) => setEnd(Number(e.target.value))} /></div>
+    <div className="admin-video-actions"><button className="admin-secondary" onClick={() => setStart(time)}>Set start here</button><button className="admin-secondary" onClick={() => setEnd(time)}>Set end here</button><button className="admin-primary" disabled={busy || start >= end} onClick={async () => { setBusy(true); setError(""); try { await submit({ action: "extract", trimStart: start, trimEnd: end, settings }); close(); } catch (cause) { setError(cause instanceof Error ? cause.message : "Unable to trim."); } finally { setBusy(false); } }}>Rebuild with trim</button><button className="admin-secondary" disabled={busy} onClick={async () => { setBusy(true); try { await submit({ action: "extract", trimStart: null, trimEnd: null, settings }); close(); } catch (cause) { setError(cause instanceof Error ? cause.message : "Unable to trim."); } finally { setBusy(false); } }}>Use auto trim</button><button className="admin-secondary" onClick={close}>Close trim</button></div>
+    {scene.analysis && <p className="admin-muted">Automatic proposal: {scene.analysis.autoStart.toFixed(2)}s–{scene.analysis.autoEnd.toFixed(2)}s. Last-frame similarity: {Math.round(scene.analysis.similarity * 100)}%.</p>}{error && <p role="alert" className="admin-error">{error}</p>}
+  </section>;
+}

@@ -1,0 +1,10 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_DIST_DIR = ".next"
+
+# Netlify automatically applies its Next.js/OpenNext adapter to repository builds.
+# These settings do not provision the database, media store, or video worker.
+# See docs/netlify-deployment.md before deploying the full platform.

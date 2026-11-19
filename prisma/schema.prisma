@@ -1,0 +1,130 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Development {
+  id            String     @id @default(cuid())
+  slug          String     @unique
+  name          String
+  tagline       String?
+  location      String?
+  description   String?
+  buildingImage String?
+  logoImage     String?
+  theme         Json?
+  status        String     @default("draft")
+  properties    Property[]
+  leads         Lead[]
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+}
+
+model Property {
+  id            String      @id @default(cuid())
+  developmentId String
+  slug          String
+  name          String
+  label         String?
+  beds          Int?
+  baths         Int?
+  sqft          Int?
+  price         String?
+  planImage     String?
+  polygon       Json?
+  focus         Json?
+  theme         Json?
+  status        String      @default("draft")
+  order         Int         @default(0)
+  rooms         Room[]
+  scenes        Scene[]
+  leads         Lead[]
+  development   Development @relation(fields: [developmentId], references: [id], onDelete: Cascade)
+
+  // The existing cinematic tour and admin editor use these presentation fields.
+  heroCopy     String?
+  accentColor  String?  @default("#D8B67A")
+  presentation Json?
+  amenities    Json?
+  legacyUnitId String?  @unique
+  roomSettings Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([developmentId, slug])
+}
+
+model Lead {
+  id            String       @id @default(cuid())
+  developmentId String?
+  propertyId    String?
+  name          String
+  email         String
+  phone         String?
+  message       String?
+  status        String       @default("new")
+  createdAt     DateTime     @default(now())
+  development   Development? @relation(fields: [developmentId], references: [id], onDelete: SetNull)
+  property      Property?    @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+}
+
+model Room {
+  id          String     @id @default(cuid())
+  propertyId  String
+  key         String
+  label       String
+  description String?
+  image       String?
+  hotspotX    Float
+  hotspotY    Float
+  order       Int        @default(0)
+  nodes       PanoNode[]
+  property    Property   @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+}
+
+model PanoNode {
+  id       String @id @default(cuid())
+  roomId   String
+  name     String
+  image    String
+  planX    Float?
+  planY    Float?
+  startYaw Float  @default(0)
+  links    Json?
+  room     Room   @relation(fields: [roomId], references: [id], onDelete: Cascade)
+}
+
+model Scene {
+  id               String    @id @default(cuid())
+  propertyId       String
+  key              String
+  fromImage        String
+  toImage          String
+  prompt           String
+  mode             String    @default("veo")
+  status           String    @default("queued")
+  progress         Int       @default(0)
+  error            String?
+  videoPath        String?
+  frameCount       Int?
+  mobileFrameCount Int?
+  trimStart        Float?
+  trimEnd          Float?
+  attempts         Int       @default(0)
+  settings         Json?
+  analysis         Json?
+  operationName    String?
+  nextAttemptAt    DateTime?
+  leaseOwner       String?
+  leaseExpiresAt   DateTime?
+  sequencePath     String?
+  duration         Float?
+  scrollLength     Int?
+  property         Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@unique([propertyId, key])
+}
