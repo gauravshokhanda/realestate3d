@@ -13,7 +13,7 @@ let passed = false;
 try {
   const intro = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   await intro.route(/frame_0001\.webp/, async (route) => { await new Promise((resolve) => setTimeout(resolve, 900)); await route.continue(); });
-  await intro.goto(base + "/aurelia", { waitUntil: "domcontentloaded" });
+  await intro.goto(base + "/aurelia", { waitUntil: "load" });
   await intro.locator(".intro-loader").waitFor({ state: "visible" });
   assert.equal(await intro.getByRole("progressbar", { name: "Loading sequence" }).count(), 1);
   await intro.screenshot({ path: path.join(output, "intro-loader.png") });
@@ -23,7 +23,7 @@ try {
     const context = await browser.newContext({ viewport: mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 }, isMobile: mobile, hasTouch: mobile });
     const page = await context.newPage(); page.setDefaultTimeout(60000);
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto(base + "/aurelia", { waitUntil: "networkidle" });
+    await page.goto(base + "/aurelia", { waitUntil: "load" });
     await page.locator('[data-scene="hero-to-plan"][data-ready=true]').waitFor();
     await page.locator(".intro-loader").waitFor({ state: "detached" });
     await page.screenshot({ path: path.join(output, `after-${mobile ? "mobile" : "desktop"}-hero.png`) });
@@ -71,13 +71,13 @@ try {
   const page = await reduced.newPage(); page.on("pageerror", (e) => errors.push(e.message));
   for (const mobile of [false, true]) {
     await page.setViewportSize(mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 });
-    await page.goto(base + "/aurelia", { waitUntil: "networkidle" });
+    await page.goto(base + "/aurelia", { waitUntil: "load" });
     await page.locator(".intro-loader").waitFor({ state: "detached" });
     await page.screenshot({ path: path.join(output, `after-${mobile ? "mobile" : "desktop"}.png`), fullPage: true });
     assert.equal(await page.locator(".page-reveal").evaluate((e) => getComputedStyle(e).animationName), "none");
     assert.equal(await page.locator(".tour-cursor").isVisible(), false);
   }
-  await page.goto(base, { waitUntil: "networkidle" });
+  await page.goto(base, { waitUntil: "load" });
   await page.locator('a[href="/aurelia"]').click();
   await page.waitForURL("**/aurelia");
   const image = await page.request.get(base + "/aurelia/og");

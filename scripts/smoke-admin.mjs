@@ -43,7 +43,7 @@ try {
   await anonymous.screenshot({ path: path.join(output, "admin-login-mobile.png"), fullPage: true });
   assert.equal((await anon.request.get(base + "/api/admin/properties")).status(), 401);
   assert.equal((await anon.request.get(base + "/api/admin/storage")).status(), 401);
-  await page.goto(base + "/admin/login", { waitUntil: "networkidle" });
+  await page.goto(base + "/admin/login", { waitUntil: "load" });
   await screenshot("admin-login-desktop.png");
   await page.getByLabel("Admin password").fill("wrong-password"); await page.getByRole("button", { name: "Sign in", exact: true }).click();
   await page.getByRole("alert").filter({ hasText: "Incorrect password." }).waitFor();
@@ -103,7 +103,7 @@ try {
   await page.getByRole("tab", { name: "Videos", exact: false }).click(); await page.getByText("Every move, connected.").waitFor();
   await uploadMatchingVideos(page, context, base, id); await screenshot("admin-videos-ready.png");
   await page.getByRole("tab", { name: "Basics", exact: false }).click(); await page.getByRole("button", { name: "Publish property", exact: true }).click(); await saved();
-  const visit = await anon.newPage(); const published = await visit.goto(`${base}/${slug}`, { waitUntil: "networkidle" }); assert.equal(published.status(), 200);
+  const visit = await anon.newPage(); const published = await visit.goto(`${base}/${slug}`, { waitUntil: "load" }); assert.equal(published.status(), 200);
   await visit.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor();
   assert.equal((await anon.request.get(`${base}/${slug}/residence-a`)).status(), 200);
   assert.equal((await anon.request.get(`${base}/${slug}/residence-b`)).status(), 404);
@@ -139,6 +139,7 @@ try {
   await page.locator(`a[href="/admin/properties/${id}"]`).click();
   page.once("dialog", (dialog) => dialog.accept()); await page.getByRole("button", { name: "Delete property", exact: true }).click();
   await page.waitForURL(base + "/admin"); assert.equal((await context.request.get(`${base}/api/admin/properties/${id}`)).status(), 404);
+  await page.getByLabel("Admin account").click();
   await page.getByRole("button", { name: "Sign out", exact: true }).click(); await page.waitForURL(base + "/admin/login");
   assert.equal((await context.request.get(`${base}/api/admin/properties`)).status(), 401);
   checks.push("Responsive admin has no horizontal overflow, unpublish hides page/media, delete cancellation/confirmation and logout work");

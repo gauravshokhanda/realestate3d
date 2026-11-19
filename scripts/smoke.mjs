@@ -27,7 +27,7 @@ try {
     const frameRequests = [];
     page.on("request", (request) => { if (/\/cache\/frames\//.test(request.url())) frameRequests.push(request.url()); });
     try {
-      await page.goto(propertyURL, { waitUntil: "domcontentloaded", timeout: 120000 });
+      await page.goto(propertyURL, { waitUntil: "load", timeout: 120000 });
       await page.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor({ timeout: 120000 });
       report.initialEncodedBytes = await page.evaluate(() => [...performance.getEntriesByType("navigation"), ...performance.getEntriesByType("resource")].reduce((sum, resource) => sum + resource.encodedBodySize, 0));
       const eagerRooms = frameRequests.filter((url) => /\/plan-to-/.test(url) && !/frame_0001\.webp/.test(url));
@@ -154,7 +154,7 @@ try {
     const animatedFrames = [];
     page.on("request", (request) => { if (/frame_(?!0001)\d+\.webp/.test(request.url())) animatedFrames.push(request.url()); });
     try {
-      await page.goto(propertyURL, { waitUntil: "networkidle" });
+      await page.goto(propertyURL, { waitUntil: "load" });
       await page.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor({ timeout: 120000 });
       const heroFile = viewport.name + "-hero.png";
       await page.screenshot({ path: path.join(output, heroFile) });
@@ -192,9 +192,3 @@ if (failed) {
   console.error(JSON.stringify(reports, null, 2));
   process.exitCode = 1;
 }
-if (!failed) await import("./smoke-platform.mjs");
-if (!failed) await import("./smoke-admin.mjs");
-if (!failed) await import("./smoke-videos.mjs");
-
-if (!failed) await import("./smoke-panoramas.mjs");
-if (!failed) await import("./smoke-polish.mjs");

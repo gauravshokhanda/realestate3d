@@ -11,10 +11,12 @@ import AmenitiesEditor from "./AmenitiesEditor";
 import Panoramas, { type PanoramaEditorHandle } from "./panoramas/Panoramas";
 import { adminApi } from "./api";
 import Videos from "./videos/Videos";
+import { useSaveIndicator } from "./ui/save-state";
 
 const tabs = ["Basics", "Images", "Units", "Rooms", "Amenities", "360° Walkthrough", "Videos"];
 export default function Editor({ initial }: { initial: AdminProperty }) {
   const { data, change: updateData, save, state, error, errors, latest, restoreStatus, refresh } = useEditor(initial);
+  useSaveIndicator(state === "Saving…" || state === "Unsaved changes" ? state : error ? "Not saved" : "Saved");
   const [tab, setTab] = useState("Basics"), [actionError, setActionError] = useState(""), [busy, setBusy] = useState(false);
   const router = useRouter();
   const panoramas = useRef<PanoramaEditorHandle>(null);

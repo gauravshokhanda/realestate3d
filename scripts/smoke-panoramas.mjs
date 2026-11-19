@@ -63,7 +63,7 @@ try {
   fixtures.push({ id: property.id, slug });
   const route = `/api/admin/properties/${property.id}/panoramas`;
   assert.equal((await anonymous.request.get(base + route)).status(), 401);
-  await page.goto(`${base}/admin/properties/${property.id}`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.goto(`${base}/admin/properties/${property.id}`, { waitUntil: "load", timeout: 90000 });
   await page.getByRole("tab", { name: "360° Walkthrough", exact: false }).click(); await saved();
   const files = await createTestPanoramas(temporary);
   for (const [index, room] of property.rooms.entries()) {
@@ -110,7 +110,7 @@ try {
   await page.getByRole("button", { name: /Kitchen test viewpoint/ }).click(); await page.setViewportSize({ width: 390, height: 844 }); await capture("admin-panorama-mobile.png"); assert(!await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)); await page.setViewportSize({ width: 1440, height: 900 });
   checks.push("Viewpoint delete cancellation preserves the graph; confirmed deletion removes incoming arrows; mobile admin has no horizontal overflow");
   await page.getByRole("button", { name: "Publish property", exact: true }).click(); await page.getByRole("button", { name: "Unpublish", exact: true }).waitFor(); await page.locator(".admin-save-state").filter({ hasText: /^Saved$/ }).waitFor(); assert.equal((await db.property.findUniqueOrThrow({ where: { id: property.id } })).status, "published");
-  await page.goto(`${base}/${slug}`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.goto(`${base}/${slug}`, { waitUntil: "load", timeout: 90000 });
   const roomKey = property.rooms[0].key, roomSelector = `#room-${roomKey}`;
   await page.locator('[data-scene="hero-to-plan"][data-ready="true"]').waitFor({ timeout: 90000 });
   await page.locator(roomSelector).scrollIntoViewIfNeeded(); const scene = page.locator(`${roomSelector} [data-scene]`); await scene.locator('section[aria-busy="false"]').waitFor({ timeout: 90000 });
@@ -142,7 +142,7 @@ try {
   checks.push("Desktop drag updates heading cone; walking arrows and cross-room minimap work; focus stays trapped and returns with unchanged scroll; close/reopen releases tracked GPU textures");
   const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, reducedMotion: "reduce" }); await mobile.addInitScript(instrumentGL);
   const phone = await mobile.newPage(), panoramaRequests = []; phone.on("pageerror", (error) => errors.push(error.message)); phone.on("request", (request) => { if (/\/panoramas\/.*\.webp/.test(request.url())) panoramaRequests.push(request.url()); });
-  await phone.goto(`${base}/${slug}`, { waitUntil: "networkidle" }); await phone.locator(roomSelector).getByRole("button", { name: /Explore in 360/ }).click(); await phone.locator('[data-pano-ready="true"]').waitFor({ timeout: 90000 });
+  await phone.goto(`${base}/${slug}`, { waitUntil: "load" }); await phone.locator(roomSelector).getByRole("button", { name: /Explore in 360/ }).click(); await phone.locator('[data-pano-ready="true"]').waitFor({ timeout: 90000 });
   const phoneYaw = await phone.locator(".pano-direction").getAttribute("data-yaw"), touch = await mobile.newCDPSession(phone);
   await touch.send("Input.dispatchTouchEvent", { type: "touchStart", touchPoints: [{ x: 260, y: 380 }] });
   for (let x = 252; x >= 180; x -= 8) { await touch.send("Input.dispatchTouchEvent", { type: "touchMove", touchPoints: [{ x, y: 380 }] }); await phone.waitForTimeout(16); }
@@ -153,7 +153,7 @@ try {
   assert(!await phone.evaluate(() => document.documentElement.scrollWidth > innerWidth));
   await phone.getByRole("button", { name: "Go to Kitchen test viewpoint", exact: true }).tap(); await phone.locator(`.pano-experience[data-current-node="${b.id}"]`).waitFor();
   await phone.getByRole("button", { name: "Close 360° walkthrough", exact: true }).tap(); await phone.waitForFunction(() => window.__panoGL.liveTextures === 0 && window.__panoGL.liveObjectUrls === 0); resources.push({ device: "mobile", ...await phone.evaluate(() => window.__panoGL) }); await mobile.close();
-  await page.goto(`${base}/aurelia`, { waitUntil: "networkidle" }); assert.equal(await page.getByRole("button", { name: /Explore in 360/ }).count(), 0);
+  await page.goto(`${base}/aurelia`, { waitUntil: "load" }); assert.equal(await page.getByRole("button", { name: /Explore in 360/ }).count(), 0);
   assert.deepEqual(errors, []); assert.deepEqual(consoleErrors, []);
   checks.push("Mobile uses only 2048px panorama variants, minimap tap works, reduced-motion entry works, and Aurelia without panoramas keeps its existing UI");
   passed = true; console.log("panoramas: PASS", checks);

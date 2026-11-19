@@ -26,6 +26,12 @@ Stop the server and worker. Run `pnpm db:migrate:crm` to create a SQLite backup 
 
 Aurelia’s former primary residence keeps its existing room and scene IDs. Residence B remains visible in the legacy tour’s selector and is a draft in the database. It has no standalone public tour. The existing property editor remains available at `/admin`; its **Units** tab edits residence records under the development.
 
+## Manage developments
+
+Sign in at `/admin/login` and open **Developments**. Create a development, then add its building image, location, and theme. Details autosave and the top bar reports the save state. A public development also needs at least one published property to appear in the collection.
+
+Open **Building map** and click the elevation to draw. Click the first point or press Enter to close the outline. Drag a point to move it, click an edge to insert one, or select a point and press Delete. Use Ctrl+Z and Ctrl+Y for undo and redo. Scroll to zoom and hold Space while dragging to pan. Select **Save polygon**, **Link existing property**, or **Create property from this polygon** to commit the outline. Open a property to reach its existing tour editor.
+
 ## Add a residence using the existing editor
 
 1. Set `ADMIN_PASSWORD` and a random `SESSION_SECRET` of at least 32 characters in your local environment file. Sign in at `/admin/login`.
@@ -56,7 +62,7 @@ Use `pnpm frames:rebuild` for all approved scenes, or `pnpm frames:rebuild --pro
 
 ## Verification and Git size
 
-With `pnpm start` or `pnpm dev` running, set `SMOKE_URL` if the origin differs from `http://localhost:3000`. Set matching admin credentials locally for the authenticated flow.
+After building, `pnpm smoke` starts a temporary production preview and runs all Chrome suites in sequence. Set `SMOKE_URL` to run the same suites against an existing development or production preview. Configure admin credentials locally for the authenticated checks. When a development server is running, set `NEXT_DIST_DIR` to a separate directory for the build and smoke commands, such as `.next-smoke`. `SMOKE_KEEP_MAP_DEMO=1` retains the three draft properties created by the map smoke run.
 
 ```sh
 pnpm lint
@@ -66,7 +72,7 @@ pnpm size
 pnpm size:check
 ```
 
-Playwright launches installed Chrome. Screenshots and perf reports go under `.artifacts/`. `pnpm size:check --index` checks staged content. The source budget is under 25 MB total, with a 2 MB limit per file. Media, SQLite files, build outputs, and generated captures stay outside Git.
+Playwright launches installed Chrome. Screenshots and perf reports go under `.artifacts/`. Run `pnpm clean` to remove Next.js builds and test outputs and print the space freed. `pnpm size:check --index` checks staged content. The source budget is under 25 MB total, with a 2 MB limit per file. Media, SQLite files, build outputs, and generated captures stay outside Git.
 
 To adopt the clean history locally, clone a second copy with `git clone --no-local --single-branch --branch main-clean <local-repo> aurelia-clean`, then restore the media pack there. Keep the current checkout and repository backup until you have verified the new one.
 

@@ -51,7 +51,9 @@ export async function saveProperty(input: AdminProperty) {
     if (!updated.count) throw new AdminError("This property changed in another session. Reload before saving.", 409);
     await tx.development.update({ where: { id: parent.id }, data: {
       name: input.name, slug: input.slug, tagline: input.tagline, location: input.location, buildingImage: towerImage,
-      status: await tx.property.count({ where: { developmentId: parent.id, status: "published" } }) ? "published" : "draft",
+      ...(before.status !== input.status && parent.properties.some((property) => property.id === parent.id)
+        ? { status: await tx.property.count({ where: { developmentId: parent.id, status: "published" } }) ? "published" : "draft" }
+        : {}),
     } });
     if (before.id === parent.id) {
       const deleted = parent.properties.filter((property) => property.id !== before.id && property.legacyUnitId && !units.some((unit) => unit.id === property.legacyUnitId));

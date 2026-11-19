@@ -48,18 +48,18 @@ async function createFixture(roomCount) {
 }
 
 try {
-  const index = await page.goto(base, { waitUntil: "networkidle" });
+  const index = await page.goto(base, { waitUntil: "load" });
   assert.equal(index.status(), 200);
   await page.getByRole("link", { name: "Explore Aurelia residences", exact: true }).waitFor();
   await page.screenshot({ path: path.join(output, "index-desktop.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({ path: path.join(output, "index-mobile.png"), fullPage: true });
   await page.setViewportSize({ width: 1440, height: 900 });
-  const nested = await page.goto(base + "/aurelia/residence-a", { waitUntil: "networkidle" });
+  const nested = await page.goto(base + "/aurelia/residence-a", { waitUntil: "load" });
   assert.equal(nested.status(), 200);
   await page.locator("main").getByRole("heading", { level: 1 }).waitFor();
   await page.screenshot({ path: path.join(output, "aurelia-residence-a.png") });
-  const missing = await page.goto(base + "/does-not-exist", { waitUntil: "networkidle" });
+  const missing = await page.goto(base + "/does-not-exist", { waitUntil: "load" });
   assert.equal(missing.status(), 404);
   await page.getByRole("heading", { name: "A different perspective awaits." }).waitFor();
   await page.screenshot({ path: path.join(output, "not-found.png"), fullPage: true });
@@ -90,7 +90,7 @@ try {
       db.property.update({ where: { id: fixture.id }, data: { status: "published" } }),
     ]);
     assert.equal((await fetch(`${base}/${fixture.slug}/residence-a`)).status, 200);
-    const rendered = await page.goto(`${base}/${fixture.slug}`, { waitUntil: "networkidle" });
+    const rendered = await page.goto(`${base}/${fixture.slug}`, { waitUntil: "load" });
     assert.equal(rendered.status(), 200);
     assert.equal(await page.locator("[data-scene]").count(), count + 1);
     assert.equal(await page.getByRole("tab").count(), 1);

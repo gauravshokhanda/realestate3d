@@ -110,7 +110,7 @@ try {
   assert.equal((await anon.request.get(base + kitchen.videoUrl)).status(), 404);
   const invalidRange = await context.request.get(base + kitchen.videoUrl, { headers: { range: "bytes=999999999-" } }); assert.equal(invalidRange.status(), 416);
   const download = await context.request.get(base + kitchen.videoUrl + "?download=1", { method: "HEAD" }); assert(download.headers()["content-disposition"].includes("attachment")); checks.push("Authenticated MP4 preview/download, byte ranges and invalid range handling");
-  await page.goto(`${base}/admin/properties/${id}`, { waitUntil: "networkidle", timeout: 90000 }); await page.getByRole("tab", { name: "Videos", exact: false }).click();
+  await page.goto(`${base}/admin/properties/${id}`, { waitUntil: "load", timeout: 90000 }); await page.getByRole("tab", { name: "Videos", exact: false }).click();
   await page.locator("[data-video-scene]").nth(3).waitFor(); await capture("videos-existing-desktop.png");
   const card = page.locator('[data-video-scene="plan-to-kitchen"]');
   await card.getByAltText("Extracted last frame").waitFor(); await card.getByAltText("Intended end image").waitFor();
